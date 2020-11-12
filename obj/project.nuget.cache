@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HmezXeDyGcD4YuGwkGo25Hz5L3gqHCGbL2UtDa6xBc2MY05MfVC7fUjmhU0S4gUSqNLAIUhq+IfOwdiP8pjn2Q==",
+  "success": true,
+  "projectFilePath": "C:\\private\\WS\\WebProject\\repos\\Dev\\TermiConsult\\TermiConsult.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joter\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
