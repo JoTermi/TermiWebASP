@@ -1,340 +1,205 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Home";
-
-    @*<link href="../wwwroot/lib/font-awesome/css/all.css" rel="stylesheet" />*@
-    @*<link href="../wwwroot/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />
-        <link href="../wwwroot/lib/font-awesome/css/fontawesome.min.css" rel="stylesheet" />*@
-    @*<link href="../wwwroot/lib/bootstrap/dist/font-awesome/css/fontawesome.css" rel="stylesheet" />
-        <link href="../wwwroot/lib/bootstrap/dist/font-awesome/css/fontawesome.min.css" rel="stylesheet" />*@
-
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
 }
-<div class="home container-fluid" id="homeId" style="margin-top:107px; background-color:white; color:dimgrey">
-    @*<div class="container justify-content-xl-center">*@
 
-    <div class="align-content-lg-center container-fluid" style="margin-top:-200px">
-        @*<img id="imageIcon" src="~/TermiConsult.png" style="align-content:center; margin-left:50%; right:0; width:30%; height:80px"/>*@
-
-        <div class="bg-info align-content-lg-center text-center col-md-12 mx-auto col-auto">
-            <img class="col" id="imageIcon" src="~/TermiConsult.png" style="width: 100%; max-width:300px; height: 80px" />
+<div class="home container bg-info" id="homeId" style="margin-top:107px">
+    <div class="container justify-content-xl-center" style="left:0; right:0; height: 100%;">
+        <div class="text-center mx-auto" style="margin-top:80px">
+            <img class="col" id="imageIcon" src="~/Images/TermiConsult.png" style="width: 100%; max-width:300px; height: 80px" />
         </div>
-
-        <div class="bg-warning align-content-lg-center text-center">
-
+        <div class="text-center mx-auto font-weight-bold dark-grey-text text-uppercase" style="margin-top: 50px; font-size: 24px; font-family:'Rockwell;'">
             <div class="col-md-12 mx-auto" style="background-color: inherit; display: block; width: 100%; padding: 5px ">
-                @*<i style="align-content:start" class="icon-tasks fa-2x mb-4"> Projekt Management</i>*@
-                <i style="align-content:start" class="fa-2x mb-4"> Projekt Management</i>
+                <i style="align-content:start" class="fa fa-tasks fa-1x mb-4"> Projekt Management</i>
             </div>
             <div class="col-md-12 mx-auto" style="background-color: inherit; display: block; width: 100%; padding: 5px">
-                @*<i style="align-content:start" class="icon-sitemap fa-2x mb-4"> Software Architektur</i>*@
-                <i style="align-content:start" class="fa-2x mb-4"> Software Architektur</i>
+                <i style="align-content:start" class="fa fa-sitemap fa-1x mb-4"> Software Architektur</i>
             </div>
             <div class="col-md-12 mx-auto" style="background-color:inherit; display:block; width:100%; padding:5px">
-                @*<i style="align-content:start" class="icon-code fa-2x mb-4"> Implementierung</i>*@
-                <i style="align-content:start" class="fa-2x mb-4"> Implementierung</i>
+                <i style="align-content:start" class="fa fa-code fa-1x mb-4"> Implementierung</i>
             </div>
             <div class="col-md-12 mx-auto" style="background-color: inherit; display:block; width:100%; padding:5px">
-                @*<i style="align-content:start" class="icon-li icon-ok fa-2x mb-4"> Software Testing</i>*@
-                <i style="align-content:start" class="fa-2x mb-4"> Software Testing</i>
+                <i style="align-content:start" class="fa fa-check-square fa-1x mb-4"> Software Testing</i>
             </div>
-            @*</div>*@
         </div>
-        @*<div class="bg-primary">
-                <img class="col" id="imageIcon" src="~/TermiConsult.png" style="width: 100%; height: 80px" />
-            </div>
-            <div class="bg-danger">
-                <img class="col" id="imageIcon" src="~/TermiConsult.png" style="width: 100%; height: 80px" />
-            </div>
-            <div class="bg-dark">
-                <img class="col" id="imageIcon" src="~/TermiConsult.png" style="width: 100%; height: 80px" />
-            </div>*@
-        <div>
-
-        </div>
-
-    </div>
-    @*<div class="col bg-info row">
-            <h2>TEST!!!</h2>
-        </div>*@
-</div>
-
-<div class="about container" id="aboutId" style="margin-top:107px">
-    <div class="container justify-content-xl-center" style="margin-top:-80px">
-        <div class="row">
-            <h5 class="font-weight-bold text-uppercase fa fa-laptop fa-3x justify-content-xl-center" style="color: dimgray;margin:auto"> Freelancer</h5>
-        </div>
-        <br />
-        <div class="row justify-content-center">
-            <br />
-            <p class="dark-grey-text text-center">
-                <span style="font-style:italic; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:32px">I</span>ch bin selbstständiger IT-Ingenieur.<br />
-                Ich habe in den vergangenen Jahren an Projekten unterschiedlicher Richtungen gearbeitet.
-                <br />
-                Meine bisherigen Einsatzpunkte sind die Erstellung von Spezifikationen und Designdokumenten, <br />
-                sowie die Implementierung und die Durchführung von Tests.
-                <br />
-                Einen Überblick über meine Projekte finden Sie <a style="cursor:pointer" onclick="smoothScroll('skillsId')"><strong>hier</strong></a>.
-            </p>
-        </div>
-        <br />
-        <div class="row">
-            <h5 class="font-weight-bold text-uppercase fa fa-laptop fa-3x justify-content-xl-center" style="color: dimgray;margin:auto"> Entwickler</h5>
-        </div>
-        <br />
-        <div class="row justify-content-center">
-            <br />
-            <p class="dark-grey-text text-center">
-                <span style="font-style:italic; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:32px">M</span>eine Tätigkeiten als Entwickler haben ihre Schwerpunkte in der Entwicklung von sowohl<br /> Desktop- als auch Webanwendungen.
-                Die Handhabung von Daten zwischen Front- und Backend ist unumgänglich.<br /> Dafür setze ich auf den Objekt Relationalen Mapper (ORM)- das Entity Framework- oder auch auf das Nhibernate.<br />
-                Als Entwickler übernehme ich gern Verantwortung sei es in der ersten Projektphase (Requirement Engineering oder Design),<br /> in der Implementierung und dem Test oder auch im Delivery der implementierten Lösungen.
-        </div>
-        <br />
-        <div class="row">
-            <h5 class="font-weight-bold text-uppercase fa fa-laptop fa-3x justify-content-xl-center" style="color: dimgray;margin:auto"> Designer</h5>
-        </div>
-        <br />
-        <div class="row justify-content-center">
-            <br />
-            <p class="dark-grey-text text-center">
-                <span style="font-style:italic; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:32px">I</span>ch arbeite strukturiert und zielorientiert. Wichtig ist mir vor jedem Projektstart <br /> größere wie auch kleinere
-                Brocken des Projekts zu erkennen und diese kenntlich zu machen. <br />Die Weiterarbeit stüzt sich auf diese Vorplanung und wird nach festgelegter Priorisierung abgearbeitet.<br />
-                Ich lege großen Wert auf Gründlichkeit. Das Erreichen der festgelegten Ziele unter Einhaltung der geplanten Zeit ist mir sehr wichtig.
-                <br />In meiner Arbeit beziehe ich mich auf etablierte Modelle, und Prinzipien wie beispielsweise<br /> das <a href="https://de.wikipedia.org/wiki/Prinzipien_objektorientierten_Designs#SOLID-Prinzipien" target="_blank"><strong>S-O-L-I-D  Prinzip</strong></a> das
-                <a href="https://de.wikipedia.org/wiki/V-Modell" target="_blank"><strong>V-Modell</strong></a>, die <a href="https://de.wikipedia.org/wiki/ALPEN-Methode" target="_blank"><strong>ALPEN</strong></a> Methode, um methodisch in meiner Arbeit voran zu schreiten.
+        <div class="d-flex justify-content-center align-items-center" style="background-color: inherit; height: 200px;">
+            <button onclick="smoothScroll('leistungId')" class="landingPageButton"><i class="blink_me fa-4x fa fa-angle-double-down"></i></button>
         </div>
     </div>
 </div>
 
-<div class="skills container" id="skillsId">
-    <div class="row" style="margin:1px">
-        <div class="col-lg-6 left">
+<div class="container leistung" id="leistungId" style="background-color: aliceblue">
+    <div class="container justify-content-xl-center text-center">
+        <h1 class="justify-content-center font-weight-bold text-uppercase" style="font-family:Rockwell; color:dimgray; margin-top:50px">Meine Leistungen</h1>
+        <hr class="thick" />
+        <img src="~/Images/MeineSchwerpunkte.png" style="background-position: center; background-size: cover; background-repeat: no-repeat; height:50%; width:80%" />
+    </div>
+</div>
 
-            <!--Section heading-->
-            <div class="d-flex" style="margin-bottom:-40px; color: dimgray">
-                <h4 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Erfahrungen</strong></h4>
+<div class="container skills" id="skillsId" style="background-color: white">
+    <div class="container justify-content-xl-center">
+        <div class="row">
+            <div class="col-lg-6 left">
+                <div class="d-flex" style="margin-bottom:-40px; color: dimgray; margin-top: 5px; font-family:Rockwell;">
+                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Erfahrungen</strong></h1>
+                </div>
+
+                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color:#fdedec">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>DENTSPLY SIRONA GMBH</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                    </blockquote>
+
+                </div>
+
+                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #d1f2eb">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>WEBER AUTOMOTIVE GMBH</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Industrie 4.0</p>
+                        <p class="mb-0 ml-1 light-grey-text">Leitrechner für Produktionslinien</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
+                    </blockquote>
+
+                </div>
+
+                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #fae5d3">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>AIRBUS GMBH</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Aeronautik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
+                        <p class="mb-0 ml-1 light-grey-text">Mission Analysis & Map Preparation</p>
+                    </blockquote>
+                </div>
+
+                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color: #85c1e9">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>SIEMENS (HEALTHINEERS)</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                        <p class="mb-0 ml-1 light-grey-text">Magnetresonanztomographie (MRT)</p>
+                    </blockquote>
+                </div>
+
+                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:#f7dc6f">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>FRAUNHOFER INSTITUTE (EZRT)</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Röntgentechnik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Bildverarbeitung</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                    </blockquote>
+                </div>
+
+                <div class="blockquote defaultCard" style="width:100%; background-color:lavender">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>LGA INTERCERT (LGA)</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Messtechnik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Medizinische Normen</p>
+                        <p class="mb-0 ml-1 light-grey-text">Aktive medizinische Geräte</p>
+                    </blockquote>
+                </div>
             </div>
 
-            <blockquote class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color:#fdedec">
-                <div class="row">
-                    <h5 class="font-weight-bold mb-0 ml-3"><strong>DENTSPLY SIRONA GmbH</strong></h5>
-                </div>
-                <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
-                <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+            <div class="col-lg-6 right">
 
-            </blockquote>
-
-            <blockquote class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #d1f2eb">
-                <div class="row">
-                    <h5 class="font-weight-bold mb-0 ml-3"><strong>Weber Automotive GmbH</strong></h5>
-                </div>
-                <p class="mb-0 ml-1 light-grey-text">Industrie 4.0</p>
-                <p class="mb-0 ml-1 light-grey-text">Leitrechner für Produktionslinien</p>
-                <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
-            </blockquote>
-
-            <blockquote class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #fae5d3">
-                <div class="row">
-                    <h5 class="font-weight-bold mb-0 ml-3"><strong>AIRBUS GmbH</strong></h5>
-                </div>
-                <p class="mb-0 ml-1 light-grey-text">Aeronautik</p>
-                <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
-                <p class="mb-0 ml-1 light-grey-text">Mission Analysis & Map Preparation</p>
-            </blockquote>
-
-            <blockquote class="blockquote bq-warning defaultCard" style="width:100%; background-color: #85c1e9">
-                <div class="row">
-                    <h5 class="font-weight-bold mb-0 ml-3"><strong>SIEMENS (HealthCare and Industry Solutions)</strong></h5>
+                <!--Second heading-->
+                <div class="d-flex" style="margin-bottom:-40px; color: dimgray; margin-top: 5px; font-family:Rockwell">
+                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Skills</strong></h1>
                 </div>
 
-                <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
-                <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
-                <p class="mb-0 ml-1 light-grey-text">Magnetresonanztomographie (MRT)</p>
-            </blockquote>
-
-            <blockquote class="blockquote bq-warning defaultCard" style="width:100%; background-color:#f7dc6f">
-                <div class="row">
-                    <h5 class="font-weight-bold mb-0 ml-3"><strong>Fraunhofer Institute (EZRT)</strong></h5>
+                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:azure; font-family: Rockwell">
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C#/.NET</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> WPF / XAML</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ASP .NET</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Rest Api</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Angular</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> CSS3</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> HTML5</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> UML</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Bootstrap</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C/C++</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Scripting (TS/JS/Batch)</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Software Architektur</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Design principles</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Industrie 4.0</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Windows Dienste</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Testing </i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> MSSQL-Datenbank</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> NHibernate</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> wordpress</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ...</i></p>
                 </div>
-                <p class="mb-0 ml-1 light-grey-text">Röntgentechnik</p>
-                <p class="mb-0 ml-1 light-grey-text">Bildverarbeitung</p>
-                <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
-            </blockquote>
 
-            <blockquote class="blockquote defaultCard" style="width:100%; background-color:lavender">
-                <div class="row">
-                    <h5 class="font-weight-bold mb-0 ml-3"><strong>LGA InterCert (LGA)</strong></h5>
+                <div class="d-flex" style="margin-bottom:-40px; color: dimgray; font-family:Rockwell;">
+                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Soft-<strong>skills</strong></h1>
                 </div>
-                <p class="mb-0 ml-1 light-grey-text">Messtechnik</p>
-                <p class="mb-0 ml-1 light-grey-text">Medizinische Normen</p>
-                <p class="mb-0 ml-1 light-grey-text">Aktive medizinische Geräte</p>
-            </blockquote>
 
+                <div class="blockquote bq-warning defaultCard" style="width:100%; border:solid 1px lightgrey; background-color:floralwhite; font-family: Rockwell">
+
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Projektleiterqualifizierung</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Requirement Engineering</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Zeitmanagement & Arbeitsmethodik</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> BWL für Naturwissenschaftler</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Grundlagen effektiver Kommunikation</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Multithreading</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C++ für Fortgeschrittene</i></p>
+                </div>
+
+            </div>
         </div>
-        <div class="col-lg-6 right">
 
-            <!--Second heading-->
-            <div class="d-flex" style="margin-bottom:-40px; color: dimgray">
-                <h4 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Skills</strong></h4>
-            </div>
-
-            <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:azure">
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C#/.NET</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> WPF / XAML</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ASP .NET</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Rest Api</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Angular</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> CSS3</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> HTML5</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> UML</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Bootstrap</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C/C++</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Scripting (TS/JS/Batch)</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Software Architektur</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Design principles</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Industrie 4.0</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Windows Dienste</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Testing </i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> MSSQL-Datenbank</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> NHibernate</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> wordpress</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ...</i></p>
-            </div>
-
-            <div class="d-flex" style="margin-bottom:-40px; color: dimgray">
-                <h4 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Soft-<strong>skills</strong></h4>
-            </div>
-
-            <div class="blockquote bq-warning defaultCard" style="width:100%; border:solid 1px lightgrey; background-color:floralwhite">
-
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Projektleiterqualifizierung</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Requirement Engineering</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Zeitmanagement & Arbeitsmethodik</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> BWL für Naturwissenschaftler</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Grundlagen effektiver Kommunikation</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Multithreading</i></p>
-                <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C++ für Fortgeschrittene</i></p>
-            </div>
-
-        </div>
-        <div class="container-fluid text-center align-content-center">
-            <hr />
-            <h5 class="text-uppercase fa fa-code fa-3x" style="color: dimgray"> Entwicklungs-<strong>Prozess</strong></h5>
-            <hr />
-        </div>
-        <div class="col-lg-12 dark-grey-text">
-            <div class="col" style="margin-top:20px">
-                <div class="row">
-                    <div class="row card card-body" style="padding: 40px; margin: 2px; background-color: inherit; width: 100%">
-                        <i class="fa fa-tasks fa-3x mb-4" aria-hidden="true"> Anforderungsanalyse</i>
-                        Die Analyse der Anforderungen erfolgt nach den definierten Errmittlungstechniken (Befragungstechniken, Kreativitätstechniken, Dokumentenzentrierte Techniken, Beobachtungstechniken.)<br />
-                        Eine Anforderung ist nach IEEE:
-                        <ul>
-                            <li>(1) Eine Bedingung oder Fähigkeit, die von einem Benutzer (Person oder System) zur Lösung eines Problems oder zur Erreichung eines Ziels benötigt wird.</li>
-                            <li>(2) Eine Bedingung oder Fähigkeit, die ein System oder Teilsystem erfüllen oder besitzen muss, um einen Vertrag, eine Norm, eine Spezifikation oder andere, formell vorgegebene Dokumente zu erfüllen.</li>
-                            <li>(3) Eine dokumentierte Repräsentation einer Bedingung oder Eigenschaft gemäß (1) oder (2).</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="row card card-body" style="padding:40px; margin:2px; background-color:inherit;  width:100%">
-                        <i class="fa fa-sitemap mb-4 fa-3x" aria-hidden="true"> Design</i>
-                        Durch die definierten Anforderungen macht es sich einfacher ein bestimmtes Muster aus den definierten Aufgaben zu erkennen.
-                        Abhängig vom zu lösenden Problem kann es sich eignen, ein grundsächliches Design-Prinzip anzuwenden.
-                        Degsign-Prinzipien haben das Ziel für alle Stakeholder, eine transparente Leitlinie und Regeln für User Experience und Design zu definieren.
-                        Damit wird die Grundlage für eine gemeinsame Kommunikation geschaffen. Die inviduellen Bilder im Kopf der einzelnen Beteiligten können somit abgeglichen werden.
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="row card card-body" style="padding:40px; margin:2px; background-color:inherit; width:100%">
-                        <i class="fa fa-code mb-4 fa-3x" aria-hidden="true"> Implementierung</i>
-                        Hier werden die in der Spezifikation definierten Vorgängen in Programmen umgesetzt. Der Entwickler benutzt dafür eine Programmiersprache.
-                        Eine Programmiersprache wird, nach dem Gabler Wirtschaftslexikon als künstliche
-                        Sprache zur Verständigung zwischen Mensch und Computer definiert. Sie ist durch ihre Syntax und Semantik definiert.
-                    </div>
-                </div>
-
-                <div class="row">
-                    @*<div style="visibility:hidden">Mehr dazu auf:  https://wirtschaftslexikon.gabler.de/definition/testen-48936/version-272182</div>*@
-                    <div class="row card card-body" style="padding:40px; margin:2px; background-color:inherit; width:100%">
-                        <i class="fa fa-tasks mb-4 fa-3x" aria-hidden="true">Testing</i>
-                        Die implementierten Modulen werden in der Testphase auf Funktionsfähigkeit überprüft. Während des Tests werden Fehler aufgespürt und beseitigt.<br />
-                        Phasen des Testen:
-                        <ul>
-                            <li>Modultest</li>
-                            <li>Integrationstest</li>
-                            <li>Systemtest</li>
-                            <li>Abnahmetest</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row" style="margin-bottom:10px">
-                    <div class="row card card-body" style="padding:40px; margin:2px; background-color:inherit;  width:100%">
-                        <i class="fa fa-truck mb-4 fa-3x" aria-hidden="true"> Freigabe</i>
-                        Das entwicklete Softwareprodukt wird für den Zweck seiner Bestimmung an seinen Auftraggeber ausgeliefert.
-                    </div>
-                </div>
-            </div>
+        <div class="container justify-content-xl-center text-center">
+            <h1 class="d-flex justify-content-center font-weight-bold text-uppercase" style="font-family: Rockwell; color: dimgray; margin-top: 50px">Entwicklungsprozess</h1>
+            <hr class="thick" />
+            <img src="~/Images/Konzept.png" style="background-position: center; background-size: cover; background-repeat: no-repeat; height:50%; width:80%" />
         </div>
     </div>
 </div>
 
-<div class="link container" id="linkId">
-    <div class="row" style="margin:1px">
-        <div class="text-center text-uppercase" style="display: flex; align-items: center; width:100%; justify-content: center; margin-top:20px; color: dimgray">
-            <h2>Diverse <strong>Links</strong></h2>
+@*<div class="container link" id="linkId">
+    <div class="container justify-content-xl-center">
+        <div class="d-flex text-center text-uppercase" style="width:100%; justify-content: center; margin-top:5px; color: dimgray; font-family:Rockwell;">
+            <h1>Diverse <strong>Links</strong></h1>
+        </div>
+        <div class="card" style="background-color: inherit;padding: 40px;margin-top: 2px; width: 100%; background-color: lightblue; font-family: Rockwell">
+            <br />
+            <a href="https://www.c-sharpcorner.com/blogs/how-to-publish-an-angular-application" target="_blank">How To Publish An Angular Application</a><br />
+            <a href="http://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained" target="_blank">Model View View Model</a><br />
+            <a href="https://docs.microsoft.com/de-de/learn/modules/welcome-to-azure/" target="_blank">Welcome to Azure</a><br />
+            <a href="https://www.docker.com/products/kubernetes" target="_blank">Docker & Kubernetes</a><br />
+            <a href="https://www.soapui.org/learn/api/soap-vs-rest-api/" target="_blank">REST vs. SOAP</a><br />
+            <a href="https://www.giantstride.gr/sql-indexing-part2/" target="_blank">SQL Indexierung</a><br />
+            <a href="https://www.youtube.com/watch?v=7ttVXhUkN3c" target="_blank">Test Driven Development (TDD)</a><br />
+            <a href="https://www.testing-board.com/bdd-behavior-driven-development/" target="_blank">Behavior Driven Development (BDD)</a><br />
+            <a href="http://stackoverflow.com/questions/3058/what-is-inversion-of-control" target="_blank">Inversion of Control (IoC)</a><br />
+            <a href="http://www.codeproject.com/Articles/1009532/Learn-Csharp-Design-patterns-step-by-step-with-a-p" target="_blank">C# Design patterns step by step</a><br />
+            <a href="http://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp" target="_blank">SOLID-architecture-principles using-simple-Csharp</a><br />
+            <a href="http://www.codeproject.com/Articles/6207/Generics-C" target="_blank">Generics C#</a><br />
+            <a href="http://www.extremeprogramming.org/" target="_blank">Extreme Programming: A gentle introduction</a><br />
+            <a href="http://www.codeproject.com/Articles/17575/Lambda-Expressions-and-Expression-Trees-An-Introdu" target="_blank">Lambda Expressions and Expression Trees: An Introduction</a><br />
+            <a href="https://fontawesome.com/icons?from=io" target="_blank">Font Awesome Icons</a><br />
+
+            <a href="https://htmlcolorcodes.com/" target="_blank">HTML Color Codes</a><br />
+            <a href="http://www.sabinanore.com/design/html-special-symbols/" target="_blank">HTML Special Symbols</a><br />
+            <a href="https://developers.google.com/custom-search/json-api/v1/libraries" target="_blank">Custom Google Search</a><br />
+            <a href="http://www.opensourcecms.com/" target="_blank">Open Source Content Management</a>
+
         </div>
 
-        <div class="card card-body" style="background-color: inherit;padding: 40px;margin: 2px; width: 100%; background-color: lightblue;">
-            <i class="fa fa-code fa-3x mb-4" aria-hidden="true"></i>
-            <p class="dark-grey-text">
-
-                <div class="preferenceForm" style="background-color:none; margin-top:-30px">
-                    <br />
-
-                    <a href="https://www.c-sharpcorner.com/blogs/how-to-publish-an-angular-application" target="_blank">How To Publish An Angular Application</a><br />
-                    <a href="http://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained" target="_blank">Model View View Model</a><br />
-                    <a href="https://docs.microsoft.com/de-de/learn/modules/welcome-to-azure/" target="_blank">Welcome to Azure</a><br />
-                    <a href="https://www.docker.com/products/kubernetes" target="_blank">Docker & Kubernetes</a><br />
-                    <a href="https://www.soapui.org/learn/api/soap-vs-rest-api/" target="_blank">REST vs. SOAP</a><br />
-                    <a href="https://www.giantstride.gr/sql-indexing-part2/" target="_blank">SQL Indexierung</a><br />
-                    <a href="https://www.youtube.com/watch?v=7ttVXhUkN3c" target="_blank">Test Driven Development (TDD)</a><br />
-                    <a href="https://www.testing-board.com/bdd-behavior-driven-development/" target="_blank">Behavior Driven Development (BDD)</a><br />
-                    <a href="http://stackoverflow.com/questions/3058/what-is-inversion-of-control" target="_blank">Inversion of Control (IoC)</a><br />
-                    <a href="http://www.codeproject.com/Articles/1009532/Learn-Csharp-Design-patterns-step-by-step-with-a-p" target="_blank">C# Design patterns step by step</a><br />
-                    <a href="http://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp" target="_blank">SOLID-architecture-principles using-simple-Csharp</a><br />
-                    <a href="http://www.codeproject.com/Articles/6207/Generics-C" target="_blank">Generics C#</a><br />
-                    <a href="http://www.extremeprogramming.org/" target="_blank">Extreme Programming: A gentle introduction</a><br />
-                    <a href="http://www.codeproject.com/Articles/17575/Lambda-Expressions-and-Expression-Trees-An-Introdu" target="_blank">Lambda Expressions and Expression Trees: An Introduction</a><br />
-                    <a href="https://fontawesome.com/icons?from=io" target="_blank">Font Awesome Icons</a><br />
-
-                    <a href="https://htmlcolorcodes.com/" target="_blank">HTML Color Codes</a><br />
-                    <a href="http://www.sabinanore.com/design/html-special-symbols/" target="_blank">HTML Special Symbols</a><br />
-                    <a href="https://developers.google.com/custom-search/json-api/v1/libraries" target="_blank">Custom Google Search</a><br />
-                    <a href="http://www.opensourcecms.com/" target="_blank">Open Source Content Management</a>
-
-                </div>
-        </div>
         <br />
-        <div class="card card-body" style="padding:40px; margin:2px; background-color:lavenderblush;  width:100%">
-            <i class="fa fa-school fa-3x mb-4" aria-hidden="true"></i>
-            <div class="preferenceForm" style="background-color:none; margin-top:-30px; ">
-                <br />
+
+        <div class="card" style="padding:40px; margin:2px; background-color:lavenderblush; width:100%; font-family: Rockwell">
+            <i class="fa fa-3x mb-4" aria-hidden="true"></i>
+            <div class="container" style="background-color:none; margin-top:-30px; ">
                 <a href="https://www.udemy.com/" target="_blank">Portal für Online Kurse [DE] </a><br />
                 <a href="https://www.pluralsight.com/" target="_blank">Portal für Online Kurse [EN]</a><br />
             </div>
 
         </div>
         <br />
-        <div class="card card-body" style="padding:40px; margin:2px; background-color: lightsteelblue; width:100%; margin-bottom:10px">
-            <i class="fa fa-users fa-3x mb-4" aria-hidden="true"></i>
-            <div class="preferenceForm" style="background-color:none; margin-top:-30px">
-                <br />
+        <div class="card" style="padding:40px; margin:2px; background-color: lightsteelblue; width:100%; margin-bottom:10px;font-family: Rockwell">
+            <i class="fa fa-3x mb-4" aria-hidden="true"></i>
+            <div class="container" style="background-color:none; margin-top:-30px">
                 <a href="https://github.com/" target="_blank">GitHub</a><br />
                 <a href="http://stackoverflow.com/" target="_blank">StackOverflow</a><br />
                 <a href="http://www.codeproject.com/" target="_blank">Code Project </a><br />
@@ -342,47 +207,137 @@
             </div>
         </div>
     </div>
-</div>
+</div>*@
 
-<div class="contact container" id="contactId">
-    <div class="row">
-        <div class="text-center text-uppercase" style="display: flex; align-items: center; width:100%; justify-content: center; color: dimgray; padding-top:-80px; margin-bottom:30px">
-            <h2><strong>KONTAKT</strong></h2>
-        </div>
-        <br />
-        <hr />
-        <div class="container text-center row" style="vertical-align:central">
-            <div class="col-md-4" style="position:center">
-                <br />
-                <p class="fa fa-phone fa-2x"></p>
-                <p><abbr title="Phone">+49(0)173 899 26 90 </abbr></p>
+<div class="container contact" id="contactId" style="background-color: white; font-family: Rockwell">
+    <div class="container justify-content-xl-center" style="margin-top: 1px; left:0; right:0; height:100%">
+        <div class="container-fluid" style="margin-bottom:5px">
+
+            @model TermiConsult.Models.ContactModel
+            <div class="container-fluid">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+
+                    <div class="container justify-content-xl-center ">
+                        <h1 class="justify-content-center font-weight-bold text-uppercase text-center" style="font-family:Rockwell; color:dimgray; margin-top:50px">Kontakt</h1>
+                        <hr class="thick" />
+
+                        <div class="container mx-auto" style="vertical-align:central">
+
+                            <p class="text-center pt-3" align="justify">
+                                Falls Sie Rückfragen an mich haben, zoegern Sie nicht, mir eine Nachricht zu hinterlassen. Ich melde mich so schnell wie moeglich zurück.<br />Vielen Dank!
+                            </p>
+                            <p class="text-center pt-3" align="justify">
+                                Pour toute question ou remarque, veuillez me laisser un message. Je vous contacterai dès que possible.<br /> Merci!
+                            </p>
+                            <p class="text-center pt-3" align="justify">
+                                In case you will have any questions or remarks, please feel free to drop me a message. I will be come back to you as soon as possible.<br /> Thanks!
+                            </p>
+                        </div>
+
+                        <hr />
+
+                        <h3 class="container mx-auto text-center pt-3" align="justify" style="color: darkslateblue">@ViewBag.Message</h3>
+
+                        <div class="row">
+                            <div class="col-lg-6 left contact-left" style="background-color: white">
+                                <div class="form-horizontal">
+
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Vorname, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Vorname, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                            @Html.ValidationMessageFor(model => model.Vorname, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Nachname, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Nachname, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                            @Html.ValidationMessageFor(model => model.Nachname, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.FromEmail, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.FromEmail, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                            @Html.ValidationMessageFor(model => model.FromEmail, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Betreff, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Betreff, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                            @Html.ValidationMessageFor(model => model.Betreff, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.TextAreaFor(model => model.Message, rows: 10, columns: 40, new { htmlAttributes = new { @class = "form-control", @placeholder = "Bitte geben Sie Ihre Nachricht hier ein.", @style = "width:100% !important; height:100px" } })
+                                            <br />
+                                            @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        @Html.LabelFor(model => model.PruefWert, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <label>
+                                                11 + 1 =
+                                                @Html.TextBoxFor(model => model.PruefWert, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                                <br />
+                                                @Html.ValidationMessageFor(model => model.PruefWert, "", new { @class = "text-danger" })
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input formmethod="post" style="background-color:lightblue" type="submit" value="Senden" class="btn btn-default" asp-controller="Contact" asp-action="Index" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6 right contact-right" style="background-color: white">
+                                <div class="text-center" style="margin-top:50px">
+                                    <div class="container">
+                                        <br />
+                                        <p class="fa fa-phone fa-2x"></p>
+                                        <p><abbr title="Phone">+49(0)173 899 26 90 </abbr></p>
+                                    </div>
+                                    <div class="col" style="position:center">
+                                        <i class="fa fa-envelope fa-2x"></i>
+                                        <p>
+                                            <a href="mailto:info@termiconsult.com">info@termiconsult.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="col" style="position:center">
+                                        <i class="fa fa-map-marker-alt fa-2x"></i>
+                                        <p>
+                                            Spitalstraße 6a<br />
+                                            Markdorf, 88677, Deutschland
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
             </div>
-            <div class="col-md-4" style="position:center">
-                <br />
-                <i class="fa fa-envelope fa-2x"></i>
-                <p>
-                    <a href="mailto:info@termiconsult.com">info@termiconsult.com</a>
-                </p>
-            </div>
-            <div class="col-md-4" style="position:center">
-                <i class="fa fa-map-marker-alt fa-2x"></i>
-                <p style="margin-bottom:-1px">Spitalstraße 6a</p>
-                <p>Markdorf, 88677, Deutschland</p>
-            </div>
         </div>
-        <hr />
-        <br />
-        <div class="container mx-auto" style="vertical-align:central">
-            <hr>
-            <p class="text-center pt-3" align="justify">
-                Falls Sie Rückfragen an mich haben, zoegern Sie nicht, mir eine Nachricht zu hinterlassen. Ich melde mich so schnell wie moeglich zurück.<br />Vielen Dank!
-            </p>
-            <p class="text-center pt-3" align="justify">
-                Pour toute question ou remarque, veuillez me laisser un message à l'adresse mentionnée ci-dessus. Je vous contacterai dès que possible.<br /> Merci!
-            </p>
-            <p class="text-center pt-3" align="justify">
-                In case you will have any questions or remarks, please feel free to drop me an email by using the above email-address. I will be come back to you as soon as possible.<br /> Thanks!
-            </p>
-        </div>
+
     </div>
 </div>

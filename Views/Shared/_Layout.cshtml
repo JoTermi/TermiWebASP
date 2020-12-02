@@ -5,31 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - TermiConsult</title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/styles.css" />
-        @*<link href="../wwwroot/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />*@
-        @*<link href="../wwwroot/lib/font-awesome/css/all.css" rel="stylesheet" />*@
-        <link href="~/lib/bootstrap/dist/font-awesome/css/fontawesome.css" rel="stylesheet" />
-        <link href="~/lib/bootstrap/dist/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        @*<link href="../wwwroot/lib/font-awesome/css/fontawesome.min.css" rel="stylesheet" />*@
-        <link href="../wwwroot/lib/font-awesome/css/all.min.css" rel="stylesheet" />
-    </environment>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
 
 </head>
-<body onscroll="scrollFunction()" style="overflow:auto">
+<body onscroll="scrollFunction()">
+
     <button id="GoUp" onclick="topFunction()" class="buttonUp fa-2x fa fa-arrow-up"></button>
 
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav id="navBarId" class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" onclick="smoothScroll('homeId')" style="width:auto; height:auto">
-                    <img id="imageIcon" src="~/TermiConsult.png" style="width:100%; height:80px" onload="loadIcon()" />
+                    <img id="imageIcon" src="~/Images/TermiConsult.png" style="width:100%; height:80px" onload="loadIcon()" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -37,24 +26,28 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        @*<li class="nav-item">
-                                <a onclick="smoothScroll('homeId')" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                            </li>*@
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a onclick="smoothScroll('aboutId')" class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                            <a onclick="smoothScroll('homeId')" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a onclick="smoothScroll('leistungId')" class="nav-link text-dark" asp-area="" asp-controller="Leistung" asp-action="Index">Leistung</a>
+                            @*<a onclick="smoothScroll('aboutId')" style="cursor:pointer" class="nav-link text-dark">About</a>*@
                         </li>
 
                         <li class="nav-item">
                             <a onclick="smoothScroll('skillsId')" class="nav-link text-dark" asp-area="" asp-controller="Skills" asp-action="Index">Skills</a>
+                            @*<a onclick="smoothScroll('skillsId')" style="cursor:pointer" class="nav-link text-dark">Skills</a>*@
                         </li>
 
-                        <li class="nav-item">
+                        @*<li class="nav-item">
                             <a onclick="smoothScroll('linkId')" class="nav-link text-dark" asp-area="" asp-controller="Links" asp-action="Index">Links</a>
-                        </li>
+                        </li>*@
 
                         <li class="nav-item">
                             <a onclick="smoothScroll('contactId')" class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Kontakt</a>
+                            @*<a onclick="smoothScroll('contactId')" style="cursor:pointer" class="nav-link text-dark">Kontakt</a>*@
                         </li>
 
                         <li class="nav-item">
@@ -64,9 +57,9 @@
                 </div>
             </div>
         </nav>
-    </header>
 
-    <main role="main" class="pb-3" style="background-color:burlywood">
+    </header>
+    <main role="main" class="pb-3">
         @RenderBody()
     </main>
 
@@ -74,47 +67,51 @@
         <div class="container">
             &copy; 2020
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" onclick="smoothScroll('homeId')" style="width:auto; height:auto">
-                <img id="imageIcon" src="~/TermiConsult.png" style="width: 60%; height: 50px" onload="loadIcon()" />
+                <img id="imageIcon" src="~/Images/TermiConsult.png" style="width: 60%; height: 50px" onload="loadIcon()" />
             </a>
-            @*<a onclick="loadImpressum()" class="nav-link text-dark" asp-area="" asp-controller="Impressum" asp-action="Index">Impressum</a>
-                <a onclick="smoothScroll('contactId')" class="nav-link text-dark" asp-area="" asp-controller="Kontakt" asp-action="Index">Kontakt</a>*@
         </div>
-        <!---->
-        @*<div class='footerdesign' style="width: 100%; vertical-align: central;display: block">
-                <a onclick="smoothScroll('homeId')" class="fa fa-home nav-link" [routerLink]="['/home']" style="display: inline; color: #efe6e2"> Home</a>
-                <a onclick="smoothScroll('contactId')" class="fa fa-id-card nav-link" [routerLink]="['/contact']" style="display:inline; color: #efe6e2"> Kontakt</a>
-                <a onclick="loadImpressum()" class="fa fa-info-circle nav-link" [routerLink]="['/impressum']" style="display: inline; color: #efe6e2"> Impressum</a>
-                <br />
-                <a onclick="smoothScroll('homeId')" class="navbar-brand" [routerLink]="['/home']" style="width:auto; height:auto">
-                    <img id="imgIcon" src="~/TermiConsult.png" style="width:60%; height:50px" onload="loadIcon()" />
-                </a>
-                <span class="fa fa-copyright">2020</span>
-            </div>*@
-
-        <!---->
     </footer>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
-
     @RenderSection("Scripts", required: false)
+    <script src="~/js/site.js"></script>
+
+    <script type="text/javascript">
+        function smoothScroll(target) {
+
+            var clientHeight = document.getElementById('navBarId').clientHeight;
+
+            if (target === 'homeId') {
+
+                document.querySelector('.home').scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }
+
+            if (target === 'leistungId') {
+
+                document.querySelector('.leistung').scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }
+
+            if (target === 'contactId') {
+
+                document.querySelector('.contact').scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }
+            if (target === 'skillsId') {
+
+                document.querySelector('.skills').scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }
+
+            setTimeout(() => {
+                window.scrollTo({ behavior: 'smooth', top: window.scrollY - clientHeight });
+            }, 500);
+
+        }
+    </script>
 </body>
 </html>
