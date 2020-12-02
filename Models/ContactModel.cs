@@ -37,5 +37,8 @@ namespace TermiConsult.Models
         [DisplayName("Nachricht")]
         [Required(ErrorMessage = "Bitte, geben Sie eine Nachricht ein.")]
         public string Message { get; set; } = "";
+
+        [Required(ErrorMessage = "Bitte, prüfen Sie Ihre Eingabe")]
+        public int PruefWert { get; set; } = 0;
     }
 }

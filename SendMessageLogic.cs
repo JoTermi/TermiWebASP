@@ -4,55 +4,94 @@ using System.Linq;
 using System.Net.Mail;
 using System.Threading.Tasks;
 using TermiConsult.Models;
+using System.Diagnostics;
+using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace TermiConsult
 {
     public class SendMessageLogic
     {
+        private string termiHostMailAddress = null;
+        private string termiHostPWD = null;
+
         private ContactModel contactdata = null;
         private string ToEmail = $"info@termiconsult.com";
 
-        public SendMessageLogic()
+        
+        public SendMessageLogic(IOptions<CredentialModel> config)
         {
             contactdata = new ContactModel();
-        }
-        public SendMessageLogic(string SMTPServer, string fromEmail)
-        {
-            this.SMTPServer = SMTPServer;
-            contactdata.FromEmail = fromEmail;
+
+            termiHostMailAddress = config.Value.UserName;
+            termiHostPWD = config.Value.Password;
         }
 
-        public SendMessageLogic(string SMTPServer, string fromEmail, string Username, string Password) : this(SMTPServer, fromEmail)
-        {
-            contactdata.Vorname = Username;
-            this.Password = Password;
-        }
+        ///// <summary>
+        ///// SMTP Server.
+        ///// </summary>
+        //public string SMTPServer { get; set; } = "smtp.strato.de";
 
-        public string SMTPServer { get; set; } = "smtp.strato.de";
 
-        public string Password { get; set; } = "TermiWant@007";
+        ///// <summary>
+        ///// Username to connect to server.
+        ///// </summary>
+        //public string UserName { get; set; } = "www.termiconsult.com";
 
+        //public int Port { get; set; } = 465;
+
+        /// <summary>
+        /// Send message
+        /// </summary>
+        /// <param name="cm">contact informations</param>
         public void Send(ContactModel cm)
         {
-            MailMessage mailMsg = new MailMessage();
-            mailMsg.To.Add(ToEmail);
+            System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
+            mail.To.Add(ToEmail);
+            mail.From = new MailAddress(termiHostMailAddress, String.Format("Neue Email von: {0}: ", cm.Nachname) ,System.Text.Encoding.UTF8);
 
-            MailAddress mailAddress = new MailAddress(cm.FromEmail);
+            mail.Subject = cm.Betreff;
+            mail.SubjectEncoding = System.Text.Encoding.UTF8;
 
-            mailMsg.From = mailAddress;
+            string NachrichtInhalt = String.Format("Neue Nachricht empfangen von: {0}, {1}, <br/>Sender-Email: {2} ", cm.Vorname, cm.Nachname, cm.FromEmail);
 
-            mailMsg.Subject = cm.Betreff;
-            mailMsg.Body = cm.Message;
-            mailMsg.IsBodyHtml = true;
-            SmtpClient smtpClient = new SmtpClient(SMTPServer, 465);
+            NachrichtInhalt += "<br/><br/><strong>Message</strong> : <br/></br> " + cm.Message;
 
-            if (cm.Vorname.Length > 0)
+            mail.BodyEncoding = System.Text.Encoding.UTF8;
+            mail.IsBodyHtml = true;
+            
+            mail.Body = NachrichtInhalt;
+
+            mail.Priority = MailPriority.High;
+
+            SmtpClient client = new SmtpClient();
+
+            client.UseDefaultCredentials = false;
+            client.Credentials = new System.Net.NetworkCredential(termiHostMailAddress, termiHostPWD);
+
+            client.Port = 25; // Default port for outlook
+            client.Host = "smtp.live.com"; // Host or outlook
+            client.EnableSsl = true;
+
+            //MailAddress mailAddress = new MailAddress("jocelin.tiemegni@hotmail.de");
+
+            try
             {
-                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("info@termiconsult.com", "TermiWant@007");
-                smtpClient.Credentials = credentials;
+                client.Send(mail);
             }
 
-            smtpClient.Send(mailMsg);
+            catch (Exception ex)
+            {
+                Exception ex2 = ex;
+                string errorMessage = string.Empty;
+                while (ex2 != null)
+                {
+                    errorMessage += ex2.ToString();
+                    ex2 = ex2.InnerException;
+                }
+            }
+
         }
 
     }

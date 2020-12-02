@@ -3,26 +3,63 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using TermiConsult.Models;
 
 namespace TermiConsult.Controllers
 {
     public class ContactController : Controller
     {
+        ContactModel contactModel = new ContactModel();
 
-        private SendMessageLogic sendMessageLogic = new SendMessageLogic();
+        private SendMessageLogic sendMessageLogic;
+        public ContactController(IOptions<CredentialModel> config)
+        {
+            sendMessageLogic = new SendMessageLogic(config);
+        }
+
+        [HttpPost]
         public IActionResult Index(ContactModel cm)
         {
-            if (!string.IsNullOrEmpty(cm.FromEmail) && !string.IsNullOrEmpty(cm.Betreff) && !string.IsNullOrEmpty(cm.Message))
+            if (ModelState.IsValid)
             {
-                SendMessage(cm);
+                if (cm.PruefWert != 12)
+                {
+                    ViewBag.Message = "Bitte, verifizieren Sie den Prüfwert";
+                    return View();
+                }
+                try
+                {
+                    sendMessageLogic.Send(cm);
+                    ViewBag.Message = "Vielen Dank! Ihre Nachricht wurde gesendet.";
+                    ModelState.Clear();
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.Message = ex.Message.ToString();
+                }
+
             }
+            else
+            {
+                ViewBag.Message = "Bitte ergänzen Sie die rot markierten Felder..";
+            }
+
             return View();
         }
 
-        private void SendMessage(ContactModel contactModel)
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View();
+        }
+        [HttpPost]
+        [Route("api/ContactMe")]
+        private ActionResult SendMessage(ContactModel contactModel)
         {
             sendMessageLogic.Send(contactModel);
+
+            return RedirectToAction("./Views/Send/Index.cshtml");
         }
     }
 }
