@@ -3,9 +3,6 @@ C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\appsetti
 C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\libman.json
 C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\package-lock.json
 C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\package.json
-C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
-C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
 C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\TermiConsult.exe
 C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\TermiConsult.deps.json
 C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\TermiConsult.runtimeconfig.json
@@ -46,3 +43,6 @@ C:\private\WS\WebProject\repos\Dev\TermiConsult\obj\Debug\netcoreapp3.1\TermiCon
 C:\private\WS\WebProject\repos\Dev\TermiConsult\obj\Debug\netcoreapp3.1\TermiConsult.genruntimeconfig.cache
 C:\private\WS\WebProject\repos\Dev\TermiConsult\obj\Debug\netcoreapp3.1\TermiConsult.csproj.CopyComplete
 C:\private\WS\WebProject\repos\Dev\TermiConsult\obj\Debug\netcoreapp3.1\TermiConsult.csprojAssemblyReference.cache
+C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\web.config
+C:\private\WS\WebProject\repos\Dev\TermiConsult\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\private\WS\WebProject\repos\Dev\TermiConsult\obj\Debug\netcoreapp3.1\scopedcss\bundle\TermiConsult.styles.css

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "HmezXeDyGcD4YuGwkGo25Hz5L3gqHCGbL2UtDa6xBc2MY05MfVC7fUjmhU0S4gUSqNLAIUhq+IfOwdiP8pjn2Q==",
+  "dgSpecHash": "BrZ3Of2MmL73ezoxUql4vVl0jJB2WLGo23M/8fxEVE2s3VUZ5/vEkZ/Y7Na2z1bnxZjVSQmf/mpUSXD0lf7FHw==",
   "success": true,
   "projectFilePath": "C:\\private\\WS\\WebProject\\repos\\Dev\\TermiConsult\\TermiConsult.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\joter\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512"
+    "C:\\Users\\joter\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }
