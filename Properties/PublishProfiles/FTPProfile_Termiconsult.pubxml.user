@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-https://go.microsoft.com/fwlink/?LinkID=208121. 
+Diese Datei wird vom Veröffentlichungs-/Paketierungsprozess Ihres Webprojekts verwendet. Sie können das Verhalten dieses Prozesses anpassen,
+indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Sie unter https://go.microsoft.com/fwlink/?LinkID=208121. 
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>ftp://www.termiconsult.com@ftp.strato.de/privateSeite/TermiConsultASPCore</_PublishTargetUrl>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/eTaCYou9kuRjNLEejMlCgAAAAACAAAAAAAQZgAAAAEAACAAAAA7Px7w/dCLB+kUKYE3AMZrZYay6RMboDFMhvIMxPbFHQAAAAAOgAAAAAIAACAAAABu6VtDdgMWpctOBPsxwvtfrMKm4ey8rYxQm9mMud36pyAAAADTCm0agMLJwPoYrsGibXCcRSggHnO/ZS06KZlgtULsr0AAAAAiLfzJqAjup6WjqqQBV14U6cMAOMauplMg5MpQNAxG+sd1+dnlO4jR8MjV0LI6PZDap6j2XkVlk2I9DiunH+1O</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/eTaCYou9kuRjNLEejMlCgAAAAACAAAAAAAQZgAAAAEAACAAAACKoOLy06dFaKy80RPP0nvk9zbi2DdUlWATaKDGk+T9ngAAAAAOgAAAAAIAACAAAAACpBx+IMo0BUNMbPN9T7o49G8lLx3JAyHWfavsRNwJDSAAAAB7ihbtPTJhgpbTtMS4/sj0p2WeBxfhiJMsWqqq0Rcr7kAAAABwASle3iyNYXqpwcQxfONwL8zt1FsYAGqthu3spP66hrKBIEMAkVOy4AnqC1AMhIif6hepFFyiKIDF/3EkdsD8</EncryptedPassword>
+    <_PublishTargetUrl>ftp://www.termiconsult.com@ftp.strato.de/privateSeite/TermiConsultASPCore/</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.Development.json">
@@ -18,6 +19,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="libman.json">
       <publishTime>10/31/2020 12:16:55</publishTime>
     </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>11/09/2019 00:56:44</publishTime>
+    </File>
     <File Include="package-lock.json">
       <publishTime>10/30/2020 07:28:22</publishTime>
     </File>
@@ -25,28 +29,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/30/2020 21:47:12</publishTime>
     </File>
     <File Include="TermiConsult.deps.json">
-      <publishTime>12/02/2020 21:02:51</publishTime>
+      <publishTime>01/03/2021 16:14:04</publishTime>
     </File>
     <File Include="TermiConsult.dll">
-      <publishTime>12/02/2020 21:02:50</publishTime>
+      <publishTime>01/03/2021 16:14:03</publishTime>
     </File>
     <File Include="TermiConsult.exe">
-      <publishTime>12/02/2020 21:02:50</publishTime>
+      <publishTime>01/03/2021 22:02:00</publishTime>
     </File>
     <File Include="TermiConsult.pdb">
-      <publishTime>12/02/2020 21:02:50</publishTime>
+      <publishTime>01/03/2021 22:01:55</publishTime>
     </File>
     <File Include="TermiConsult.runtimeconfig.json">
-      <publishTime>12/01/2020 22:07:21</publishTime>
+      <publishTime>01/03/2021 15:41:47</publishTime>
     </File>
     <File Include="TermiConsult.Views.dll">
-      <publishTime>12/02/2020 21:02:50</publishTime>
+      <publishTime>01/03/2021 16:14:04</publishTime>
     </File>
     <File Include="TermiConsult.Views.pdb">
-      <publishTime>12/02/2020 21:02:50</publishTime>
+      <publishTime>01/03/2021 22:01:57</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>12/02/2020 21:03:11</publishTime>
+      <publishTime>01/03/2021 22:02:01</publishTime>
     </File>
     <File Include="wwwroot/css/site.css">
       <publishTime>11/14/2020 23:14:12</publishTime>
@@ -88,10 +92,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2020 10:05:32</publishTime>
     </File>
     <File Include="wwwroot/Images/DSC_0737.JPG">
-      <publishTime>11/25/2020 10:06:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/Images/DSC_0738.JPG">
-      <publishTime>11/25/2020 10:06:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/Images/DSC_0739.JPG">
       <publishTime>11/25/2020 10:06:06</publishTime>
@@ -117,6 +121,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="wwwroot/Images/DSC_0857.JPG">
       <publishTime>04/21/2019 13:43:40</publishTime>
     </File>
+    <File Include="wwwroot/Images/JoTermi.png">
+      <publishTime>12/28/2020 14:37:42</publishTime>
+    </File>
     <File Include="wwwroot/Images/Konzept.png">
       <publishTime>11/28/2020 22:32:59</publishTime>
     </File>
@@ -130,13 +137,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/28/2020 22:32:09</publishTime>
     </File>
     <File Include="wwwroot/Images/Supernova.jpg">
-      <publishTime>11/25/2020 15:04:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/Images/TermiConsult.png">
       <publishTime>11/30/2020 08:18:48</publishTime>
     </File>
     <File Include="wwwroot/Images/Vanilla.jpg">
       <publishTime>11/25/2020 18:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/index.html">
+      <publishTime>01/02/2021 13:46:21</publishTime>
     </File>
     <File Include="wwwroot/js/site.js">
       <publishTime>12/01/2020 22:05:57</publishTime>
@@ -220,100 +230,100 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/31/2020 12:16:59</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/all.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/all.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/brands.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/brands.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/conflict-detection.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/conflict-detection.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/fontawesome.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/fontawesome.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/regular.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/regular.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/solid.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/solid.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/v4-shims.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/js/v4-shims.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/sprites/brands.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/sprites/regular.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/sprites/solid.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-brands-400.eot">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-brands-400.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-brands-400.ttf">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-brands-400.woff">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-brands-400.woff2">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-regular-400.eot">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-regular-400.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-regular-400.ttf">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-regular-400.woff">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-regular-400.woff2">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-solid-900.eot">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-solid-900.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-solid-900.ttf">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-solid-900.woff">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/font-awesome/webfonts/fa-solid-900.woff2">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
       <publishTime>09/14/2020 15:47:50</publishTime>
@@ -385,100 +395,100 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/31/2020 12:16:59</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/all.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/all.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/brands.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/brands.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/conflict-detection.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/conflict-detection.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/fontawesome.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/fontawesome.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/regular.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/regular.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/solid.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/solid.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/v4-shims.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/js/v4-shims.min.js">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/sprites/brands.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/sprites/regular.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/sprites/solid.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-brands-400.eot">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-brands-400.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-brands-400.ttf">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-brands-400.woff">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-brands-400.woff2">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-regular-400.eot">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-regular-400.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-regular-400.ttf">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-regular-400.woff">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-regular-400.woff2">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-solid-900.eot">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-solid-900.svg">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-solid-900.ttf">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-solid-900.woff">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/font-awesome/webfonts/fa-solid-900.woff2">
-      <publishTime>10/31/2020 12:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
       <publishTime>09/14/2020 15:47:50</publishTime>

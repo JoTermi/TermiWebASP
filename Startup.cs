@@ -1,10 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -33,7 +28,11 @@ namespace TermiConsult
 
             // Add credential object, so it can be injected.
             services.Configure<CredentialModel>(Configuration.GetSection("Credential"));
-            
+
+            //services.AddDbContextContext(<ApplicationDbContext
+            services.AddControllersWithViews();
+            services.AddRazorPages();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,11 +49,13 @@ namespace TermiConsult
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            // https://stackoverflow.com/questions/40646815/how-to-set-start-page-in-dotnet-core-web-api
+            // always use UseDefaultFiles() before UseStaticFiles() Otherwise it won't work.
+            app.UseDefaultFiles();
             app.UseStaticFiles();
 
+            app.UseHttpsRedirection();
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -62,7 +63,9 @@ namespace TermiConsult
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
+
         }
     }
 }

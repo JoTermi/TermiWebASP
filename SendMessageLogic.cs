@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.Extensions.Options;
+using System;
 using System.Net.Mail;
-using System.Threading.Tasks;
 using TermiConsult.Models;
-using System.Diagnostics;
-using Microsoft.Extensions.Configuration;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 
 namespace TermiConsult
 {
@@ -19,7 +13,7 @@ namespace TermiConsult
         private ContactModel contactdata = null;
         private string ToEmail = $"info@termiconsult.com";
 
-        
+
         public SendMessageLogic(IOptions<CredentialModel> config)
         {
             contactdata = new ContactModel();
@@ -27,19 +21,6 @@ namespace TermiConsult
             termiHostMailAddress = config.Value.UserName;
             termiHostPWD = config.Value.Password;
         }
-
-        ///// <summary>
-        ///// SMTP Server.
-        ///// </summary>
-        //public string SMTPServer { get; set; } = "smtp.strato.de";
-
-
-        ///// <summary>
-        ///// Username to connect to server.
-        ///// </summary>
-        //public string UserName { get; set; } = "www.termiconsult.com";
-
-        //public int Port { get; set; } = 465;
 
         /// <summary>
         /// Send message
@@ -49,7 +30,7 @@ namespace TermiConsult
         {
             System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
             mail.To.Add(ToEmail);
-            mail.From = new MailAddress(termiHostMailAddress, String.Format("Neue Email von: {0}: ", cm.Nachname) ,System.Text.Encoding.UTF8);
+            mail.From = new MailAddress(termiHostMailAddress, String.Format("Neue Email von: {0}: ", cm.Nachname), System.Text.Encoding.UTF8);
 
             mail.Subject = cm.Betreff;
             mail.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -60,7 +41,7 @@ namespace TermiConsult
 
             mail.BodyEncoding = System.Text.Encoding.UTF8;
             mail.IsBodyHtml = true;
-            
+
             mail.Body = NachrichtInhalt;
 
             mail.Priority = MailPriority.High;

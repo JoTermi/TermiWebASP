@@ -84,7 +84,6 @@ function getBaseUrl() {
 }
 
 function eventFire(el, etype) {
-    alert("TEST EVENT FIRE!");
     if (el.fireEvent) {
         el.fireEvent('on' + etype);
     } else {
@@ -95,7 +94,7 @@ function eventFire(el, etype) {
 }
 
 function smoothScroll(target) {
-    
+
     var clientHeight = document.getElementById('navBarId').clientHeight;
 
     if (target === 'homeId') {
@@ -106,9 +105,6 @@ function smoothScroll(target) {
     }
 
     if (target === 'leistungId') {
-
-        //alert("The Window location is: " + window.location);
-        alert("In leistung id");
 
         document.querySelector('.leistung').scrollIntoView({
             behavior: 'smooth',
@@ -136,7 +132,7 @@ function smoothScroll(target) {
     }
 
     setTimeout(() => {
-        window.scrollTo({ behavior: 'smooth', top: window.scrollY - clientHeight });
+        window.scrollTo({ behavior: 'smooth', top: window.scrollY - clientHeight + 2 });
     }, 500);
 
 }

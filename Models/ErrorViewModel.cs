@@ -1,5 +1,3 @@
-using System;
-
 namespace TermiConsult.Models
 {
     public class ErrorViewModel

@@ -91,8 +91,23 @@ footer {
     border: 1px solid lightgrey;
 }
 
+.leistung {
+    overflow: hidden;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 1px solid lightgrey;
+}
+
 .impressum {
-    background-color: white; /*#584F4A;*/
+    overflow: hidden;
+    background-color: white;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -193,6 +208,7 @@ footer {
 }
 
 .link {
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     min-height: 100vh;
@@ -205,22 +221,6 @@ footer {
     top: 0;
     border: 1px solid lightgrey;
     background-color: white;
-}
-
-.leistung {
-    /*background-image: url(../Images/MeineKompetenzen.png);
-    background-repeat: no-repeat;
-    background-size: cover;*/
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    top: 0;
-    border: 1px solid lightgrey;
 }
 
 .leistung_wrap {
@@ -248,6 +248,7 @@ footer {
     opacity: 0.1;
 }
 .contact {
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     min-height: 100vh;
