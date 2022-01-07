@@ -52,8 +52,8 @@ function loadIcon2() {
 
 function loadIcon() {
 
-    document.getElementById('imageIcon').setAttribute('style', 'width:30px');
-    document.getElementById('imageIcon').setAttribute('style', 'height:30px');
+    document.getElementById('imageIcon').setAttribute('style', 'width:auto');
+    document.getElementById('imageIcon').setAttribute('style', 'height:auto');
 
     //// Chrome 1 - 85
     //var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
