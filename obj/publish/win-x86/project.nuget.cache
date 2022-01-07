@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "M+WacJd6R6QcHy8PZj6qJMIhQ94oKwrvae8L5n+ZMQ6UU7UZSjkkHFUnSc7RtgJHrAmbdHZ5d2OQVP4vd5oS3A==",
+  "success": true,
+  "projectFilePath": "C:\\private\\WS\\WebProject\\repos\\Dev\\TermiConsult\\TermiConsult.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joter\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.10\\microsoft.netcore.app.runtime.win-x86.3.1.10.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.10\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.10.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.10\\microsoft.aspnetcore.app.runtime.win-x86.3.1.10.nupkg.sha512",
+    "C:\\Users\\joter\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\3.1.10\\microsoft.netcore.app.host.win-x86.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

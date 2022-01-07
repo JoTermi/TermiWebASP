@@ -52,29 +52,37 @@ function loadIcon2() {
 
 function loadIcon() {
 
-    // Chrome 1 - 85
-    var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
-    if (isChrome) {
-        document.getElementById('imageIcon').setAttribute('style', 'width:40%');
-    }
+    document.getElementById('imageIcon').setAttribute('style', 'width:30px');
+    document.getElementById('imageIcon').setAttribute('style', 'height:30px');
 
-    // Firefox 1.0+
-    var isFirefox = typeof InstallTrigger !== 'undefined';
-    if (isFirefox) {
-        // Do nothing. The icon is set properly in firefox
-    }
+    //// Chrome 1 - 85
+    //var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+    //if (isChrome) {
+    //    document.getElementById('imageIcon').setAttribute('style', 'width:50px');
+    //    document.getElementById('imageIcon').setAttribute('style', 'height:50px');
+    //}
 
-    // Edge 20+
-    var isEdge = !isIE && !!window.StyleMedia;
-    if (isEdge) {
-        document.getElementById('imageIcon').setAttribute('style', 'width:40%');
-    }
+    //// Firefox 1.0+
+    //var isFirefox = typeof InstallTrigger !== 'undefined';
+    //if (isFirefox) {
+    //    // Do nothing. The icon is set properly in firefox
+    //    document.getElementById('imageIcon').setAttribute('style', 'width:50px');
+    //    document.getElementById('imageIcon').setAttribute('style', 'height:50px');
+    //}
 
-    // Internet Explorer 6-11
-    var isIE = /*@cc_on!@*/false || !!document.documentMode;
-    if (isIE) {
-        document.getElementById('imageIcon').setAttribute('style', 'width:40%');
-    }
+    //// Edge 20+
+    //var isEdge = !isIE && !!window.StyleMedia;
+    //if (isEdge) {
+    //    document.getElementById('imageIcon').setAttribute('style', 'width:50px');
+    //    document.getElementById('imageIcon').setAttribute('style', 'height:50px');
+    //}
+
+    //// Internet Explorer 6-11
+    //var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    //if (isIE) {
+    //    document.getElementById('imageIcon').setAttribute('style', 'width:50px');
+    //    document.getElementById('imageIcon').setAttribute('style', 'height:50px');
+    //}
 }
 
 
@@ -105,12 +113,9 @@ function smoothScroll(target) {
         });
     }
 
-    if (target === 'leistungId') {
+    if (target === 'aboutId') {
 
-        //alert("The Window location is: " + window.location);
-        alert("In leistung id");
-
-        document.querySelector('.leistung').scrollIntoView({
+        document.querySelector('.about').scrollIntoView({
             behavior: 'smooth',
         });
     }

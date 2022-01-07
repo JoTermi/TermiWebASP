@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Diese Datei wird vom Veröffentlichungs-/Paketierungsprozess Ihres Webprojekts verwendet. Sie können das Verhalten dieses Prozesses anpassen,
+indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Sie unter https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/eTaCYou9kuRjNLEejMlCgAAAAACAAAAAAAQZgAAAAEAACAAAACt9u7m/yMBKm2BGNgyH9+mJAPE5tgGf+tLWTkks6YQIgAAAAAOgAAAAAIAACAAAADh64TBrThflZOBl/hbdlsUvu2Rs3+iMxEI/HO3ZSHOLSAAAACLdbutiTuoQk9WkFt6zfK7tiYo2U5RqAXJm3q9i9EQSEAAAAAroXfTX31kO/8F2679mNtD5a9tl6xXHbXlo0/MS+tgsYN43nd24y2uQf+gzNJ3gD+NOeMHSv5liwDDV4DhgcCE</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.jotermi.com/domains/jotermi.com/public_html</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>11/30/2020 12:45:45</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>11/09/2019 00:56:44</publishTime>
+    </File>
+    <File Include="package-lock.json">
+      <publishTime>10/30/2020 07:28:22</publishTime>
+    </File>
+    <File Include="package.json">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="TermiConsult.deps.json">
+      <publishTime>03/01/2021 16:46:18</publishTime>
+    </File>
+    <File Include="TermiConsult.dll">
+      <publishTime>01/03/2021 16:45:05</publishTime>
+    </File>
+    <File Include="TermiConsult.exe">
+      <publishTime>01/03/2021 16:47:34</publishTime>
+    </File>
+    <File Include="TermiConsult.pdb">
+      <publishTime>03/01/2021 16:46:17</publishTime>
+    </File>
+    <File Include="TermiConsult.runtimeconfig.json">
+      <publishTime>01/03/2021 15:41:47</publishTime>
+    </File>
+    <File Include="TermiConsult.Views.dll">
+      <publishTime>01/03/2021 16:45:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

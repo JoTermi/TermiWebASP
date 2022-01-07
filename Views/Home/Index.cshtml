@@ -2,214 +2,133 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Home";
 }
+<div id="homeId" class="container-fluid home" style=" background-color: white">
+    @*<div class="leistung_wrap">*@
 
-<div class="home container bg-info" id="homeId" style="margin-top:107px">
-    <div class="container justify-content-xl-center" style="left:0; right:0; height: 100%;">
-        <div class="text-center mx-auto" style="margin-top:80px">
-            <img class="col" id="imageIcon" src="~/Images/TermiConsult.png" style="width: 100%; max-width:300px; height: 80px" />
+    @*<img src="~/Images/MeineKompetenzen.png" style="opacity:0.2; background-repeat: repeat; background-size:cover; height:100%" />*@
+    <section style="text-align: center; font-family: Rockwell; background-color:white">
+        <div>
+            @*<h1>TermiConsult</h1>*@
+            <h1 class="justify-content-center font-weight-bold text-uppercase" style="font-family:Rockwell; color:dimgray; margin-top:50px">TermiConsult</h1>
+            <br />kompetent - strukturiert - zielorientiert
+            <br />für Ihr Erfolg.
         </div>
-        <div class="text-center mx-auto font-weight-bold dark-grey-text text-uppercase" style="margin-top: 50px; font-size: 24px; font-family:'Rockwell;'">
-            <div class="col-md-12 mx-auto" style="background-color: inherit; display: block; width: 100%; padding: 5px ">
-                <i style="align-content:start" class="fa fa-tasks fa-1x mb-4"> Projekt Management</i>
-            </div>
-            <div class="col-md-12 mx-auto" style="background-color: inherit; display: block; width: 100%; padding: 5px">
-                <i style="align-content:start" class="fa fa-sitemap fa-1x mb-4"> Software Architektur</i>
-            </div>
-            <div class="col-md-12 mx-auto" style="background-color:inherit; display:block; width:100%; padding:5px">
-                <i style="align-content:start" class="fa fa-code fa-1x mb-4"> Implementierung</i>
-            </div>
-            <div class="col-md-12 mx-auto" style="background-color: inherit; display:block; width:100%; padding:5px">
-                <i style="align-content:start" class="fa fa-check-square fa-1x mb-4"> Software Testing</i>
+        <div class="landingPage">
+            @*<h1>Landing Page...</h1>*@
+            @*<div class="leistung_wrap">
+                    <img src="~/Images/MeineKompetenzen.png" style="background-repeat: repeat; background-size: cover; height: 100px" />
+                </div>*@
+            <div class="container-fluid">
+                <hr />
+                <p>
+                    Wir stehen Ihnen gern zur Seite in der Realisierung Ihrer anspruchsvollen IT-Projekte.
+                    Der Schwerpunkt unserer Dienstleistung liegt unter anderem in der Realisierung von
+                    <strong style="font-size:24px">Software Architektur</strong>, <strong style="font-size: 24px">Implementierung</strong> und <strong style="font-size: 24px">Software Testing.</strong>
+                    <br />
+                <p><h2>Sie sind hier genau richtig ...</h2></p>
+
+                <p> ...,wenn die Erfahrung aus langjähriger Projektarbeit in unterschiedlichen Themenbereichen (Medizin, Automotiv, Aeronautik) einen zeitgewinnenden Einstieg in Ihrem Projekt ermöglichen soll.</p>
+                <p> ...,wenn Ihnen Design-Prinzipien SOLID, DRY, KISS für klare Struktur in Ihrer Software sorgen sollten.</p>
+                <p> ...,wenn die Entwicklung komplexer, multithreadingfähige User Interface unter Anwendung des Design-Pattern (WPF, XAML, MVVM) vorzuweisen ist.</p>
+                <p> ...,wenn zur Verifizierung der Spezifikationen die Beherrschung von Testautomatisierung und Mocking Framework vorausgesetzt ist.</p>
+                <p> ...,wenn Sie Projekterfahrung in einem agilen Umfeld gewünscht ist.</p>
+                <hr />
+
+                <h5>Wollen wir gemeinsam am Erfolg Ihres Unternehmens arbeiten? Lassen Sie uns für ein persönliches Kennenlernen einen Termin vereinbaren.</h5>
+                <div class="container">
+                    <div class="d-flex justify-content-center align-items-center" style="background-color: inherit; height: 200px;">
+                        <h5>Lassen Sie uns kennen lernen!</h5>
+                        <Button onclick="smoothScroll('contactId')"><i class="blink_me fa-4x fa fa-angle-double-down landingPageButton"></i></Button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center" style="background-color: inherit; height: 200px;">
-            <button onclick="smoothScroll('leistungId')" class="landingPageButton"><i class="blink_me fa-4x fa fa-angle-double-down"></i></button>
-        </div>
-    </div>
+
+    </section>
+
+    @*</div>*@
 </div>
 
 <div class="container leistung" id="leistungId" style="background-color: aliceblue">
     <div class="container justify-content-xl-center text-center">
-        <h1 class="justify-content-center font-weight-bold text-uppercase" style="font-family:Rockwell; color:dimgray; margin-top:50px">Meine Leistungen</h1>
-        <hr class="thick" />
-        <img src="~/Images/MeineSchwerpunkte.png" style="background-position: center; background-size: cover; background-repeat: no-repeat; height:50%; width:80%" />
-    </div>
-</div>
+        <h1 class="justify-content-center font-weight-bold text-uppercase" style="font-family:Rockwell; color:dimgray; margin-top:50px">Wir bieten an</h1>
 
-<div class="container skills" id="skillsId" style="background-color: white">
-    <div class="container justify-content-xl-center">
-        <div class="row">
-            <div class="col-lg-6 left">
-                <div class="d-flex" style="margin-bottom:-40px; color: dimgray; margin-top: 5px; font-family:Rockwell;">
-                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Erfahrungen</strong></h1>
+        <div class="leistung_wrap" style="font-family: Rockwell; color:black">
+
+            <img src="~/Images/MeineKompetenzen.png" style="opacity:0.1; overflow:no-display;background-repeat: no-repeat" />
+
+            <div class="row">
+                <div class="defaultCard col">
+                    <div class="card-header bg-primary">
+                        <strong>Softwareentwicklung</strong>
+                    </div>
+                    <div class="card-body col bg-transparent">
+                        <p class="card-text row text-left">
+                            Wir helfen Unternehmen dabei, Ihre Softwareprodukte unter Rücksicht etablierter Entwicklungsmodelle kompetent und termingerecht zu entwickeln.
+                        </p>
+                        @*<a href="#" class="btn btn-primary row">Mehr ...</a>*@
+                    </div>
                 </div>
 
-                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color:#fdedec">
-                    <blockquote style="font-family: Rockwell">
-                        <h5 class="font-weight-bold mb-0 ml-1"><strong>DENTSPLY SIRONA GMBH</strong></h5>
-                        <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
-                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
-                    </blockquote>
-
+                <div class="defaultCard col">
+                    <div class="card-header bg-success">
+                        <strong>Testautomatisierung</strong>
+                    </div>
+                    <div class="card-body col bg-transparent">
+                        <p class="card-text row text-left">
+                            Mit der Realisierung von automatisierten Softwarelösungen sorgen wir dafür, dass Fehler frühzeitig gefunden und vor jedem Release beseitigt werden.<br />
+                            Der Einsatz von Qualitätssicherungsverfahren trägt maßgeblich zur Zufriedenheit unserer Kunden bei.
+                        </p>
+                        @*<a href="#" class="btn btn-primary row">Mehr ...</a>*@
+                    </div>
                 </div>
 
-                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #d1f2eb">
-                    <blockquote style="font-family: Rockwell">
-                        <h5 class="font-weight-bold mb-0 ml-1"><strong>WEBER AUTOMOTIVE GMBH</strong></h5>
-                        <p class="mb-0 ml-1 light-grey-text">Industrie 4.0</p>
-                        <p class="mb-0 ml-1 light-grey-text">Leitrechner für Produktionslinien</p>
-                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
-                    </blockquote>
-
-                </div>
-
-                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #fae5d3">
-                    <blockquote style="font-family: Rockwell">
-                        <h5 class="font-weight-bold mb-0 ml-1"><strong>AIRBUS GMBH</strong></h5>
-                        <p class="mb-0 ml-1 light-grey-text">Aeronautik</p>
-                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
-                        <p class="mb-0 ml-1 light-grey-text">Mission Analysis & Map Preparation</p>
-                    </blockquote>
-                </div>
-
-                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color: #85c1e9">
-                    <blockquote style="font-family: Rockwell">
-                        <h5 class="font-weight-bold mb-0 ml-1"><strong>SIEMENS (HEALTHINEERS)</strong></h5>
-                        <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
-                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
-                        <p class="mb-0 ml-1 light-grey-text">Magnetresonanztomographie (MRT)</p>
-                    </blockquote>
-                </div>
-
-                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:#f7dc6f">
-                    <blockquote style="font-family: Rockwell">
-                        <h5 class="font-weight-bold mb-0 ml-1"><strong>FRAUNHOFER INSTITUTE (EZRT)</strong></h5>
-                        <p class="mb-0 ml-1 light-grey-text">Röntgentechnik</p>
-                        <p class="mb-0 ml-1 light-grey-text">Bildverarbeitung</p>
-                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
-                    </blockquote>
-                </div>
-
-                <div class="blockquote defaultCard" style="width:100%; background-color:lavender">
-                    <blockquote style="font-family: Rockwell">
-                        <h5 class="font-weight-bold mb-0 ml-1"><strong>LGA INTERCERT (LGA)</strong></h5>
-                        <p class="mb-0 ml-1 light-grey-text">Messtechnik</p>
-                        <p class="mb-0 ml-1 light-grey-text">Medizinische Normen</p>
-                        <p class="mb-0 ml-1 light-grey-text">Aktive medizinische Geräte</p>
-                    </blockquote>
+                <div class="defaultCard col">
+                    <div class="card-header bg-info">
+                        <strong>IT Security</strong>
+                    </div>
+                    <div class="card-body col bg-transparent">
+                        <p class="card-text row text-left">Entwickelte Softwarelösungen berücksichtigen Aspekte der Sicherheit in der Datenverarbeitung.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-6 right">
-
-                <!--Second heading-->
-                <div class="d-flex" style="margin-bottom:-40px; color: dimgray; margin-top: 5px; font-family:Rockwell">
-                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Skills</strong></h1>
-                </div>
-
-                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:azure; font-family: Rockwell">
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C#/.NET</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> WPF / XAML</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ASP .NET</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Rest Api</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Angular</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> CSS3</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> HTML5</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> UML</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Bootstrap</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C/C++</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Scripting (TS/JS/Batch)</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Software Architektur</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Design principles</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Industrie 4.0</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Windows Dienste</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Testing </i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> MSSQL-Datenbank</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> NHibernate</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> wordpress</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ...</i></p>
-                </div>
-
-                <div class="d-flex" style="margin-bottom:-40px; color: dimgray; font-family:Rockwell;">
-                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Soft-<strong>skills</strong></h1>
-                </div>
-
-                <div class="blockquote bq-warning defaultCard" style="width:100%; border:solid 1px lightgrey; background-color:floralwhite; font-family: Rockwell">
-
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Projektleiterqualifizierung</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Requirement Engineering</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Zeitmanagement & Arbeitsmethodik</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> BWL für Naturwissenschaftler</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Grundlagen effektiver Kommunikation</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Multithreading</i></p>
-                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C++ für Fortgeschrittene</i></p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container justify-content-xl-center text-center">
-            <h1 class="d-flex justify-content-center font-weight-bold text-uppercase" style="font-family: Rockwell; color: dimgray; margin-top: 50px">Entwicklungsprozess</h1>
-            <hr class="thick" />
-            <img src="~/Images/Konzept.png" style="background-position: center; background-size: cover; background-repeat: no-repeat; height:50%; width:80%" />
-        </div>
-    </div>
-</div>
-
-@*<div class="container link" id="linkId">
-    <div class="container justify-content-xl-center">
-        <div class="d-flex text-center text-uppercase" style="width:100%; justify-content: center; margin-top:5px; color: dimgray; font-family:Rockwell;">
-            <h1>Diverse <strong>Links</strong></h1>
-        </div>
-        <div class="card" style="background-color: inherit;padding: 40px;margin-top: 2px; width: 100%; background-color: lightblue; font-family: Rockwell">
+            <!--<div class="container justify-content-xl-center" style="margin-bottom:3px; margin-top:2px">
+            <h5 class="text-center font-weight-bold text-uppercase" style="margin-top:25px"> Freelancer</h5>
             <br />
-            <a href="https://www.c-sharpcorner.com/blogs/how-to-publish-an-angular-application" target="_blank">How To Publish An Angular Application</a><br />
-            <a href="http://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained" target="_blank">Model View View Model</a><br />
-            <a href="https://docs.microsoft.com/de-de/learn/modules/welcome-to-azure/" target="_blank">Welcome to Azure</a><br />
-            <a href="https://www.docker.com/products/kubernetes" target="_blank">Docker & Kubernetes</a><br />
-            <a href="https://www.soapui.org/learn/api/soap-vs-rest-api/" target="_blank">REST vs. SOAP</a><br />
-            <a href="https://www.giantstride.gr/sql-indexing-part2/" target="_blank">SQL Indexierung</a><br />
-            <a href="https://www.youtube.com/watch?v=7ttVXhUkN3c" target="_blank">Test Driven Development (TDD)</a><br />
-            <a href="https://www.testing-board.com/bdd-behavior-driven-development/" target="_blank">Behavior Driven Development (BDD)</a><br />
-            <a href="http://stackoverflow.com/questions/3058/what-is-inversion-of-control" target="_blank">Inversion of Control (IoC)</a><br />
-            <a href="http://www.codeproject.com/Articles/1009532/Learn-Csharp-Design-patterns-step-by-step-with-a-p" target="_blank">C# Design patterns step by step</a><br />
-            <a href="http://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp" target="_blank">SOLID-architecture-principles using-simple-Csharp</a><br />
-            <a href="http://www.codeproject.com/Articles/6207/Generics-C" target="_blank">Generics C#</a><br />
-            <a href="http://www.extremeprogramming.org/" target="_blank">Extreme Programming: A gentle introduction</a><br />
-            <a href="http://www.codeproject.com/Articles/17575/Lambda-Expressions-and-Expression-Trees-An-Introdu" target="_blank">Lambda Expressions and Expression Trees: An Introduction</a><br />
-            <a href="https://fontawesome.com/icons?from=io" target="_blank">Font Awesome Icons</a><br />
-
-            <a href="https://htmlcolorcodes.com/" target="_blank">HTML Color Codes</a><br />
-            <a href="http://www.sabinanore.com/design/html-special-symbols/" target="_blank">HTML Special Symbols</a><br />
-            <a href="https://developers.google.com/custom-search/json-api/v1/libraries" target="_blank">Custom Google Search</a><br />
-            <a href="http://www.opensourcecms.com/" target="_blank">Open Source Content Management</a>
-
-        </div>
-
-        <br />
-
-        <div class="card" style="padding:40px; margin:2px; background-color:lavenderblush; width:100%; font-family: Rockwell">
-            <i class="fa fa-3x mb-4" aria-hidden="true"></i>
-            <div class="container" style="background-color:none; margin-top:-30px; ">
-                <a href="https://www.udemy.com/" target="_blank">Portal für Online Kurse [DE] </a><br />
-                <a href="https://www.pluralsight.com/" target="_blank">Portal für Online Kurse [EN]</a><br />
+            <p style="text-align:justify">
+                <span style="font-style: italic; font-size:32px">I</span>ch bin selbstständiger IT-Ingenieur.<br />
+                Ich habe in den vergangenen Jahren an Projekten unterschiedlicher Richtungen gearbeitet.
+                <br />
+                Meine bisherigen Einsatzpunkte sind die Erstellung von Spezifikationen und Designdokumenten, sowie die Implementierung und die Durchführung von Tests.
+                <br />-->
+            @*<div style="white-space: nowrap"> Einen Überblick über meine Projekte finden Sie <a asp-controller="Skills" asp-action="Index" style="cursor:pointer"><strong>hier</strong></a></div>*@
+            <!--</p>
             </div>
-
-        </div>
-        <br />
-        <div class="card" style="padding:40px; margin:2px; background-color: lightsteelblue; width:100%; margin-bottom:10px;font-family: Rockwell">
-            <i class="fa fa-3x mb-4" aria-hidden="true"></i>
-            <div class="container" style="background-color:none; margin-top:-30px">
-                <a href="https://github.com/" target="_blank">GitHub</a><br />
-                <a href="http://stackoverflow.com/" target="_blank">StackOverflow</a><br />
-                <a href="http://www.codeproject.com/" target="_blank">Code Project </a><br />
-                <a href="https://www.tutorialspoint.com/tutorialslibrary.htm" target="_blank">Tutorials Point</a><br />
+            <div class="container justify-content-xl-center" style="margin-bottom:3px">
+                <h5 class="text-center font-weight-bold text-uppercase" style="margin-top:5px"> Entwickler</h5>
+                <br />
+                <p style="text-align:justify">
+                    <span style="font-style:italic; font-size:32px">M</span>eine Tätigkeiten als Entwickler haben ihre Schwerpunkte in der Entwicklung von sowohl Desktop- als auch Webanwendungen.
+                    Die Handhabung von Daten zwischen Front- und Backend ist unumgänglich.<br /> Dafür setze ich auf den Objekt Relationalen Mapper (ORM)- das Entity Framework- oder auch auf das Nhibernate.
+                    Als Entwickler übernehme ich gern Verantwortung sei es in der ersten Projektphase (Requirement Engineering oder Design), in der Implementierung und dem Test oder auch im Delivery der implementierten Lösungen.
             </div>
+            <div class="container justify-content-xl-center" style="margin-bottom:10px">
+                <h5 class="text-center font-weight-bold text-uppercase" style="margin-top:5px"> Designer</h5>
+                <br />
+                <p style="text-align:justify">
+                    <span style="font-style:italic; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:32px">I</span>ch arbeite strukturiert und zielorientiert. Wichtig ist mir vor jedem Projektstart größere wie auch kleinere
+                    Brocken des Projekts zu erkennen und diese kenntlich zu machen. <br />Die Weiterarbeit stüzt sich auf diese Vorplanung und wird nach festgelegter Priorisierung abgearbeitet.<br />
+                    Ich lege großen Wert auf Gründlichkeit. Das Erreichen der festgelegten Ziele unter Einhaltung der geplanten Zeit ist mir sehr wichtig.
+                    <br />In meiner Arbeit beziehe ich mich auf etablierte Modelle, und Prinzipien wie beispielsweise das <a href="https://de.wikipedia.org/wiki/Prinzipien_objektorientierten_Designs#SOLID-Prinzipien" target="_blank"><strong>S-O-L-I-D  Prinzip</strong></a> das
+                    <a href="https://de.wikipedia.org/wiki/V-Modell" target="_blank"><strong>V-Modell</strong></a>, die <a href="https://de.wikipedia.org/wiki/ALPEN-Methode" target="_blank"><strong>ALPEN</strong></a> Methode, um methodisch in meiner Arbeit voran zu schreiten.
+            </div>-->
         </div>
+        <a href="#" class="btn btn-primary row" style="right">Mehr ...</a>
     </div>
-</div>*@
+</div>
 
-<div class="container contact" id="contactId" style="background-color: white; font-family: Rockwell">
+<div id="contactId" class="container contact" style="background-color: white; font-family: Rockwell">
     <div class="container justify-content-xl-center" style="margin-top: 1px; left:0; right:0; height:100%">
         <div class="container-fluid" style="margin-bottom:5px">
 
@@ -227,13 +146,13 @@
 
                         <div class="container mx-auto" style="vertical-align:central">
 
-                            <p class="text-center pt-3" align="justify">
+                            <p class="text-left pt-3" align="justify">
                                 Falls Sie Rückfragen an mich haben, zoegern Sie nicht, mir eine Nachricht zu hinterlassen. Ich melde mich so schnell wie moeglich zurück.<br />Vielen Dank!
                             </p>
-                            <p class="text-center pt-3" align="justify">
+                            <p class="text-left pt-3" align="justify">
                                 Pour toute question ou remarque, veuillez me laisser un message. Je vous contacterai dès que possible.<br /> Merci!
                             </p>
-                            <p class="text-center pt-3" align="justify">
+                            <p class="text-left pt-3" align="justify">
                                 In case you will have any questions or remarks, please feel free to drop me a message. I will be come back to you as soon as possible.<br /> Thanks!
                             </p>
                         </div>
@@ -326,8 +245,8 @@
                                     <div class="col" style="position:center">
                                         <i class="fa fa-map-marker-alt fa-2x"></i>
                                         <p>
-                                            Spitalstraße 6a<br />
-                                            Markdorf, 88677, Deutschland
+                                            Theo-Berger-Weg 4a<br />
+                                            Nörvenich, 52388, Deutschland
                                         </p>
                                     </div>
                                 </div>
@@ -341,3 +260,179 @@
 
     </div>
 </div>
+
+<!-- WAS ANDERE SAGEN!!!-->
+<div class="container leistung" id="leistungId" style="background-color: white">
+    <div class="container justify-content-xl-center text-center">
+        <h1 class="justify-content-center font-weight-bold text-uppercase" style="font-family:Rockwell; color:dimgray; margin-top:50px">Was andere sagen</h1>
+        <hr />
+        <div id="carousselTestimonials" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousselTestimonials" data-slide-to="0" class="active"></li>
+                <li data-target="#carousselTestimonials" data-slide-to="1"></li>
+                <li data-target="#carousselTestimonials" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100">
+                        <p>
+                            Mit seinen umfassenden Kenntnissen in der .Net / C# Entwicklung konnte Herr Jocelin Tiemegni maßgeblich zum Erfolg
+                            unseres Kundenprojektes beitragen.
+                        </p>
+                        <br /><br />
+                        <footer class="blockquote-footer">Michael Hacker <cite title="Source Title">DataRespons GmbH</cite></footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100">
+                        <p>
+                            Herr Tiemegni unterstützte uns in der Entwicklung von Testautomatisierungssystemen für diverse Prototypen.
+                            Mit seinen profunden Kenntnissen in C# sowie seinem sicheren Umgang mit diversen Entwicklungswerkzeugen war Herr Tiemegni eine Bereicherung für unser Team.
+                            Vielen Dank für die sehr gute Zusammenarbeit
+                        </p>
+                        <br /><br />
+                        <footer class="blockquote-footer">S. N. - Karl Storz <cite title="Source Title">Karl Storz</cite></footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100">
+                        <p>
+                            Wir haben Herr Tiemegni für die Architekturanalyse eines bestehenden medizinischen Reportingssystems beaufragt.
+                            Mit seinen profunden Kenntnissen in C#/.NET und in der Softwarearchitektur hat Herr Tiemegni in kürzester Zeit zur erheblichen
+                            Verbesserung unseres Reportingsoftware beigetragen. Vielen Dank für Ihre Unterstützung.
+                        </p>
+                        <br /><br />
+                        <footer class="blockquote-footer">Prof. Dr. Heiko Meyer <cite title="Source Title">KMS Vertrieb und Services AG.</cite></footer>
+                    </div>
+                </div>
+            </div><br />
+            <a class="carousel-control-prev" href="#carousselTestimonials" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousselTestimonials" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--<div class="container skills" id="skillsId" style="background-color: white">
+    <div class="container justify-content-xl-center">
+        <div class="row">
+            <div class="col-lg-6 left">
+                <div class="d-flex" style="margin-bottom:-40px; color: dimgray; margin-top: 5px; font-family:Rockwell;">
+                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Erfahrungen</strong></h1>
+                </div>
+
+                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color:#fdedec">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>DENTSPLY SIRONA GMBH</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                    </blockquote>
+
+                </div>
+
+                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #d1f2eb">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>WEBER AUTOMOTIVE GMBH</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Industrie 4.0</p>
+                        <p class="mb-0 ml-1 light-grey-text">Leitrechner für Produktionslinien</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
+                    </blockquote>
+
+                </div>
+
+                <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #fae5d3">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>AIRBUS GMBH</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Aeronautik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
+                        <p class="mb-0 ml-1 light-grey-text">Mission Analysis & Map Preparation</p>
+                    </blockquote>
+                </div>
+
+                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color: #85c1e9">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>SIEMENS (HEALTHINEERS)</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                        <p class="mb-0 ml-1 light-grey-text">Magnetresonanztomographie (MRT)</p>
+                    </blockquote>
+                </div>
+
+                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:#f7dc6f">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>FRAUNHOFER INSTITUTE (EZRT)</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Röntgentechnik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Bildverarbeitung</p>
+                        <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                    </blockquote>
+                </div>
+
+                <div class="blockquote defaultCard" style="width:100%; background-color:lavender">
+                    <blockquote style="font-family: Rockwell">
+                        <h5 class="font-weight-bold mb-0 ml-1"><strong>LGA INTERCERT (LGA)</strong></h5>
+                        <p class="mb-0 ml-1 light-grey-text">Messtechnik</p>
+                        <p class="mb-0 ml-1 light-grey-text">Medizinische Normen</p>
+                        <p class="mb-0 ml-1 light-grey-text">Aktive medizinische Geräte</p>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="col-lg-6 right">-->
+<!--Second heading-->
+<!--<div class="d-flex" style="margin-bottom:-40px; color: dimgray; margin-top: 5px; font-family:Rockwell">
+                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Skills</strong></h1>
+                </div>
+
+                <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:azure; font-family: Rockwell">
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C#/.NET</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> WPF / XAML</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ASP .NET</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Rest Api</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Angular</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> CSS3</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> HTML5</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> UML</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Bootstrap</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C/C++</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Scripting (TS/JS/Batch)</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Software Architektur</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Design principles</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Industrie 4.0</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Windows Dienste</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Testing </i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> MSSQL-Datenbank</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> NHibernate</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> wordpress</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ...</i></p>
+                </div>
+
+                <div class="d-flex" style="margin-bottom:-40px; color: dimgray; font-family:Rockwell;">
+                    <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Soft-<strong>skills</strong></h1>
+                </div>
+
+                <div class="blockquote bq-warning defaultCard" style="width:100%; border:solid 1px lightgrey; background-color:floralwhite; font-family: Rockwell">
+
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Projektleiterqualifizierung</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Requirement Engineering</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Zeitmanagement & Arbeitsmethodik</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> BWL für Naturwissenschaftler</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Grundlagen effektiver Kommunikation</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Multithreading</i></p>
+                    <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C++ für Fortgeschrittene</i></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container justify-content-xl-center text-center">
+            <h1 class="d-flex justify-content-center font-weight-bold text-uppercase" style="font-family: Rockwell; color: dimgray; margin-top: 50px">Entwicklungsprozess</h1>
+            <hr class="thick" />
+            <img src="~/Images/Konzept.png" style="background-position: center; background-size: cover; background-repeat: no-repeat; height:50%; width:80%" />
+        </div>
+    </div>
+</div>-->

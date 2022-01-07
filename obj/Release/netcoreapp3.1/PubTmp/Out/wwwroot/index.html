@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - TermiConsult</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link href="/lib/font-awesome/css/all.css" rel="stylesheet" />
+
+</head>
+<body onscroll="scrollFunction()">
+
+    <button id="GoUp" onclick="topFunction()" class="buttonUp fa-2x fa fa-arrow-up"></button>
+
+    <header>
+        <nav id="navBarId" class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" onclick="smoothScroll('homeId')" style="width:auto; height:auto" href="/">
+                    <img id="imageIcon" src="/Images/JoTermi.png" style="width:100%; height:80px" onload="loadIcon()" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a onclick="smoothScroll('homeId')" class="nav-link text-dark" href="/">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a onclick="smoothScroll('leistungId')" class="nav-link text-dark" href="/Leistung">Leistung</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a onclick="smoothScroll('skillsId')" class="nav-link text-dark" href="/Skills">Skills</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a onclick="smoothScroll('contactId')" class="nav-link text-dark" href="/Contact">Kontakt</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a onclick="loadImpressum()" class="nav-link text-dark" href="/Impressum">Impressum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main role="main" class="pb-3">
+
+        <div class="home container bg-info" id="homeId" style="margin-top:107px">
+            <div class="container justify-content-xl-center" style="left:0; right:0; height: 100%;">
+                <div class="text-center mx-auto" style="margin-top:80px">
+                    <img class="col" id="imageIcon" src="/Images/JoTermi.png" style="width: 100%; max-width:300px; height: 80px" />
+                </div>
+                <div class="text-center mx-auto font-weight-bold dark-grey-text text-uppercase" style="margin-top: 50px; font-size: 24px; font-family:'Rockwell;'">
+                    <div class="col-md-12 mx-auto" style="background-color: inherit; display: block; width: 100%; padding: 5px ">
+                        <i style="align-content:start" class="fa fa-tasks fa-1x mb-4"> Projekt Management</i>
+                    </div>
+                    <div class="col-md-12 mx-auto" style="background-color: inherit; display: block; width: 100%; padding: 5px">
+                        <i style="align-content:start" class="fa fa-sitemap fa-1x mb-4"> Software Architektur</i>
+                    </div>
+                    <div class="col-md-12 mx-auto" style="background-color:inherit; display:block; width:100%; padding:5px">
+                        <i style="align-content:start" class="fa fa-code fa-1x mb-4"> Implementierung</i>
+                    </div>
+                    <div class="col-md-12 mx-auto" style="background-color: inherit; display:block; width:100%; padding:5px">
+                        <i style="align-content:start" class="fa fa-check-square fa-1x mb-4"> Software Testing</i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="background-color: inherit; height: 200px;">
+                    <button onclick="smoothScroll('leistungId')" class="landingPageButton"><i class="blink_me fa-4x fa fa-angle-double-down"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container leistung" id="leistungId" style="background-color: aliceblue">
+            <div class="container justify-content-xl-center text-center">
+                <h1 class="justify-content-center font-weight-bold text-uppercase" style="font-family:Rockwell; color:dimgray; margin-top:50px">Meine Leistungen</h1>
+                <hr class="thick" />
+                <img src="/Images/MeineSchwerpunkte.png" style="background-position: center; background-size: cover; background-repeat: no-repeat; height:50%; width:80%" />
+            </div>
+        </div>
+
+        <div class="container skills" id="skillsId" style="background-color: white">
+            <div class="container justify-content-xl-center">
+                <div class="row">
+                    <div class="col-lg-6 left">
+                        <div class="d-flex" style="margin-bottom:-40px; color: dimgray; margin-top: 5px; font-family:Rockwell;">
+                            <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Erfahrungen</strong></h1>
+                        </div>
+
+                        <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color:#fdedec">
+                            <blockquote style="font-family: Rockwell">
+                                <h5 class="font-weight-bold mb-0 ml-1"><strong>DENTSPLY SIRONA GMBH</strong></h5>
+                                <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
+                                <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                            </blockquote>
+
+                        </div>
+
+                        <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #d1f2eb">
+                            <blockquote style="font-family: Rockwell">
+                                <h5 class="font-weight-bold mb-0 ml-1"><strong>WEBER AUTOMOTIVE GMBH</strong></h5>
+                                <p class="mb-0 ml-1 light-grey-text">Industrie 4.0</p>
+                                <p class="mb-0 ml-1 light-grey-text">Leitrechner für Produktionslinien</p>
+                                <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
+                            </blockquote>
+
+                        </div>
+
+                        <div class="blockquote bq-warning mb-4 defaultCard" style="width:100%; background-color: #fae5d3">
+                            <blockquote style="font-family: Rockwell">
+                                <h5 class="font-weight-bold mb-0 ml-1"><strong>AIRBUS GMBH</strong></h5>
+                                <p class="mb-0 ml-1 light-grey-text">Aeronautik</p>
+                                <p class="mb-0 ml-1 light-grey-text">Softwarequalität</p>
+                                <p class="mb-0 ml-1 light-grey-text">Mission Analysis & Map Preparation</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="blockquote bq-warning defaultCard" style="width:100%; background-color: #85c1e9">
+                            <blockquote style="font-family: Rockwell">
+                                <h5 class="font-weight-bold mb-0 ml-1"><strong>SIEMENS (HEALTHINEERS)</strong></h5>
+                                <p class="mb-0 ml-1 light-grey-text">Medizintechnik</p>
+                                <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                                <p class="mb-0 ml-1 light-grey-text">Magnetresonanztomographie (MRT)</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:#f7dc6f">
+                            <blockquote style="font-family: Rockwell">
+                                <h5 class="font-weight-bold mb-0 ml-1"><strong>FRAUNHOFER INSTITUTE (EZRT)</strong></h5>
+                                <p class="mb-0 ml-1 light-grey-text">Röntgentechnik</p>
+                                <p class="mb-0 ml-1 light-grey-text">Bildverarbeitung</p>
+                                <p class="mb-0 ml-1 light-grey-text">Softwarequalität & Tooling</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="blockquote defaultCard" style="width:100%; background-color:lavender">
+                            <blockquote style="font-family: Rockwell">
+                                <h5 class="font-weight-bold mb-0 ml-1"><strong>LGA INTERCERT (LGA)</strong></h5>
+                                <p class="mb-0 ml-1 light-grey-text">Messtechnik</p>
+                                <p class="mb-0 ml-1 light-grey-text">Medizinische Normen</p>
+                                <p class="mb-0 ml-1 light-grey-text">Aktive medizinische Geräte</p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 right">
+
+                        <!--Second heading-->
+                        <div class="d-flex" style="margin-bottom:-40px; color: dimgray; margin-top: 5px; font-family:Rockwell">
+                            <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Meine <strong>Skills</strong></h1>
+                        </div>
+
+                        <div class="blockquote bq-warning defaultCard" style="width:100%; background-color:azure; font-family: Rockwell">
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C#/.NET</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> WPF / XAML</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ASP .NET</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Rest Api</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Angular</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> CSS3</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> HTML5</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> UML</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Bootstrap</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C/C++</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Scripting (TS/JS/Batch)</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Software Architektur</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Design principles</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Industrie 4.0</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Windows Dienste</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Testing </i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> MSSQL-Datenbank</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> NHibernate</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> wordpress</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> ...</i></p>
+                        </div>
+
+                        <div class="d-flex" style="margin-bottom:-40px; color: dimgray; font-family:Rockwell;">
+                            <h1 class="text-md-left text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Soft-<strong>skills</strong></h1>
+                        </div>
+
+                        <div class="blockquote bq-warning defaultCard" style="width:100%; border:solid 1px lightgrey; background-color:floralwhite; font-family: Rockwell">
+
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Projektleiterqualifizierung</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Requirement Engineering</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Zeitmanagement & Arbeitsmethodik</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> BWL für Naturwissenschaftler</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Grundlagen effektiver Kommunikation</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> Multithreading</i></p>
+                            <p class="mb-0 ml-1 light-grey-text text-uppercase font-weight-bold"><i class="fa fa-check"> C++ für Fortgeschrittene</i></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container justify-content-xl-center text-center">
+                    <h1 class="d-flex justify-content-center font-weight-bold text-uppercase" style="font-family: Rockwell; color: dimgray; margin-top: 50px">Entwicklungsprozess</h1>
+                    <hr class="thick" />
+                    <img src="/Images/Konzept.png" style="background-position: center; background-size: cover; background-repeat: no-repeat; height:50%; width:80%" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container contact" id="contactId" style="background-color: white; font-family: Rockwell">
+            <div class="container justify-content-xl-center" style="margin-top: 1px; left:0; right:0; height:100%">
+                <div class="container-fluid" style="margin-bottom:5px">
+
+                    <div class="container-fluid">
+
+                        <form action="/" method="post">
+                            <div class="container justify-content-xl-center ">
+                                <h1 class="justify-content-center font-weight-bold text-uppercase text-center" style="font-family:Rockwell; color:dimgray; margin-top:50px">Kontakt</h1>
+                                <hr class="thick" />
+
+                                <div class="container mx-auto" style="vertical-align:central">
+
+                                    <p class="text-center pt-3" align="justify">
+                                        Falls Sie Rückfragen an mich haben, zoegern Sie nicht, mir eine Nachricht zu hinterlassen. Ich melde mich so schnell wie moeglich zurück.<br />Vielen Dank!
+                                    </p>
+                                    <p class="text-center pt-3" align="justify">
+                                        Pour toute question ou remarque, veuillez me laisser un message. Je vous contacterai dès que possible.<br /> Merci!
+                                    </p>
+                                    <p class="text-center pt-3" align="justify">
+                                        In case you will have any questions or remarks, please feel free to drop me a message. I will be come back to you as soon as possible.<br /> Thanks!
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <h3 class="container mx-auto text-center pt-3" align="justify" style="color: darkslateblue"></h3>
+
+                                <div class="row">
+                                    <div class="col-lg-6 left contact-left" style="background-color: white">
+                                        <div class="form-horizontal">
+
+
+                                            <div class="form-group">
+                                                <label class="control-label container" for="Vorname">Vorname</label>
+                                                <div class="col-md-10">
+                                                    <input class="form-control text-box single-line" data-val="true" data-val-required="Voname ist erforderlich." id="Vorname" name="Vorname" style="width:100% !important;" type="text" value="" />
+                                                    <span class="field-validation-valid text-danger" data-valmsg-for="Vorname" data-valmsg-replace="true"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label container" for="Nachname">Nachname</label>
+                                                <div class="col-md-10">
+                                                    <input class="form-control text-box single-line" data-val="true" data-val-required="Nachname ist erforderlich." id="Nachname" name="Nachname" style="width:100% !important;" type="text" value="" />
+                                                    <span class="field-validation-valid text-danger" data-valmsg-for="Nachname" data-valmsg-replace="true"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label container" for="FromEmail">E-Mail</label>
+                                                <div class="col-md-10">
+                                                    <input class="form-control text-box single-line" data-val="true" data-val-required="Email ist erforderlich." id="FromEmail" name="FromEmail" style="width:100% !important;" type="text" value="" />
+                                                    <span class="field-validation-valid text-danger" data-valmsg-for="FromEmail" data-valmsg-replace="true"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label container" for="Betreff">Betreff</label>
+                                                <div class="col-md-10">
+                                                    <input class="form-control text-box single-line" data-val="true" data-val-required="Betreff ist erforderlich." id="Betreff" name="Betreff" style="width:100% !important;" type="text" value="" />
+                                                    <span class="field-validation-valid text-danger" data-valmsg-for="Betreff" data-valmsg-replace="true"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label container" for="Message">Nachricht</label>
+                                                <div class="col-md-10">
+                                                    <textarea cols="40" data-val="true" data-val-required="Bitte, geben Sie eine Nachricht ein." htmlAttributes="{ class = form-control, placeholder = Bitte geben Sie Ihre Nachricht hier ein., style = width:100% !important; height:100px }" id="Message" name="Message" rows="10">
+</textarea>
+                                                    <br />
+                                                    <span class="field-validation-valid text-danger" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+
+                                                <label class="control-label container" for="PruefWert">PruefWert</label>
+                                                <div class="col-md-offset-2 col-md-10">
+                                                    <label>
+                                                        11 + 1 =
+                                                        <input data-val="true" data-val-required="Bitte, pr&#xFC;fen Sie Ihre Eingabe" htmlAttributes="{ class = form-control, style = width:100% !important; }" id="PruefWert" name="PruefWert" type="text" value="" />
+                                                        <br />
+                                                        <span class="field-validation-valid text-danger" data-valmsg-for="PruefWert" data-valmsg-replace="true"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-md-offset-2 col-md-10">
+                                                    <input formmethod="post" style="background-color:lightblue" type="submit" value="Senden" class="btn btn-default" formaction="/Contact" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-6 right contact-right" style="background-color: white">
+                                        <div class="text-center" style="margin-top:50px">
+                                            <div class="container">
+                                                <br />
+                                                <p class="fa fa-phone fa-2x"></p>
+                                                <p><abbr title="Phone">+49(0)173 899 26 90 </abbr></p>
+                                            </div>
+                                            <div class="col" style="position:center">
+                                                <i class="fa fa-envelope fa-2x"></i>
+                                                <p>
+                                                    <a href="mailto:info@termiconsult.com">info@termiconsult.com</a>
+                                                </p>
+                                            </div>
+                                            <div class="col" style="position:center">
+                                                <i class="fa fa-map-marker-alt fa-2x"></i>
+                                                <p>
+                                                    Spitalstraße 6a<br />
+                                                    Markdorf, 88677, Deutschland
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8A8MfdHcAvxAgMepVWip801AkVTi0WEl-n0mh569wNiA8PAT6dAP8f0jWSUtRZVPsTpPvCM6FWLtR_rx8crX7GPJKkE3I8v57lWeSGyoEOm97nGwjA7vNJlhTRXk5WFYtr2CCu6VypvJkuYkdF2HfxQ" />
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-top footer text-muted" style="width: 100%; align-content: center; display: inline-block; background-color:white; position:relative; margin-top:-16px">
+        <div class="container">
+            &copy; 2020
+            <a class="navbar-brand" onclick="smoothScroll('homeId')" style="width:auto; height:auto" href="/">
+                <img id="imageIcon" src="/Images/JoTermi.png" style="width: 60%; height: 50px" onload="loadIcon()" />
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="/js/site.js"></script>
+
+    <script type="text/javascript">
+        function smoothScroll(target) {
+
+            var clientHeight = document.getElementById('navBarId').clientHeight;
+
+            if (target === 'homeId') {
+
+                document.querySelector('.home').scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }
+
+            if (target === 'leistungId') {
+
+                document.querySelector('.leistung').scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }
+
+            if (target === 'contactId') {
+
+                document.querySelector('.contact').scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }
+            if (target === 'skillsId') {
+
+                document.querySelector('.skills').scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }
+
+            setTimeout(() => {
+                window.scrollTo({ behavior: 'smooth', top: window.scrollY - clientHeight });
+            }, 500);
+
+        }
+    </script>
+</body>
+</html>

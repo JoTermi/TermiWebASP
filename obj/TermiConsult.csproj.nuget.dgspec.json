@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\private\\WS\\WebProject\\repos\\Dev\\TermiConsult\\TermiConsult.csproj": {}
+    "C:\\private\\WS\\WebProject\\repos\\Dev\\ASP NET\\TermiConsult\\TermiConsult.csproj": {}
   },
   "projects": {
-    "C:\\private\\WS\\WebProject\\repos\\Dev\\TermiConsult\\TermiConsult.csproj": {
+    "C:\\private\\WS\\WebProject\\repos\\Dev\\ASP NET\\TermiConsult\\TermiConsult.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\private\\WS\\WebProject\\repos\\Dev\\TermiConsult\\TermiConsult.csproj",
+        "projectUniqueName": "C:\\private\\WS\\WebProject\\repos\\Dev\\ASP NET\\TermiConsult\\TermiConsult.csproj",
         "projectName": "TermiConsult",
-        "projectPath": "C:\\private\\WS\\WebProject\\repos\\Dev\\TermiConsult\\TermiConsult.csproj",
+        "projectPath": "C:\\private\\WS\\WebProject\\repos\\Dev\\ASP NET\\TermiConsult\\TermiConsult.csproj",
         "packagesPath": "C:\\Users\\joter\\.nuget\\packages\\",
-        "outputPath": "C:\\private\\WS\\WebProject\\repos\\Dev\\TermiConsult\\obj\\",
+        "outputPath": "C:\\private\\WS\\WebProject\\repos\\Dev\\ASP NET\\TermiConsult\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -31,6 +31,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,10 +43,15 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "FontAwesome": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -58,6 +64,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.10, 3.1.10]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -66,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

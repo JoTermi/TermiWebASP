@@ -1,0 +1,137 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Kontakt";
+}
+
+<div class="contact container" id="contactId" style="background-color: white">
+    <div class="container justify-content-xl-center" style="margin-top: 1px; left:0; right:0; height:100%">
+        <div class="container-fluid" style="margin-bottom:5px">
+
+            @model TermiConsult.Models.ContactModel
+            <div class="container-fluid">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+
+                    <div class="container justify-content-xl-center ">
+                        <h1 class="justify-content-center font-weight-bold text-uppercase text-center" style="font-family:Rockwell; color:dimgray; margin-top:50px">Kontakt</h1>
+                        <hr class="thick" />
+
+                        <div class="container mx-auto" style="vertical-align:central">
+
+                            <p class="text-center pt-3" align="justify">
+                                Falls Sie Rückfragen an mich haben, zoegern Sie nicht, mir eine Nachricht zu hinterlassen. Ich melde mich so schnell wie moeglich zurück.<br />Vielen Dank!
+                            </p>
+                            <p class="text-center pt-3" align="justify">
+                                Pour toute question ou remarque, veuillez me laisser un message. Je vous contacterai dès que possible.<br /> Merci!
+                            </p>
+                            <p class="text-center pt-3" align="justify">
+                                In case you will have any questions or remarks, please feel free to drop me a message. I will be come back to you as soon as possible.<br /> Thanks!
+                            </p>
+                        </div>
+
+                        <hr />
+
+                        <h3 class="container mx-auto text-center pt-3" align="justify" style="color: darkslateblue">@ViewBag.Message</h3>
+
+                        <div class="row">
+                            <div class="col-lg-6 left contact-left" style="background-color: white">
+                                <div class="form-horizontal">
+
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Vorname, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Vorname, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                            @Html.ValidationMessageFor(model => model.Vorname, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Nachname, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Nachname, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                            @Html.ValidationMessageFor(model => model.Nachname, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.FromEmail, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.FromEmail, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                            @Html.ValidationMessageFor(model => model.FromEmail, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Betreff, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Betreff, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                            @Html.ValidationMessageFor(model => model.Betreff, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-10">
+                                            @Html.TextAreaFor(model => model.Message, rows: 10, columns: 40, new { htmlAttributes = new { @class = "form-control", @placeholder = "Bitte geben Sie Ihre Nachricht hier ein.", @style = "width:100% !important; height:100px" } })
+                                            <br />
+                                            @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        @Html.LabelFor(model => model.PruefWert, htmlAttributes: new { @class = "control-label container" })
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <label>
+                                                11 + 1 =
+                                                @Html.TextBoxFor(model => model.PruefWert, new { htmlAttributes = new { @class = "form-control", @style = "width:100% !important;" } })
+                                                <br />
+                                                @Html.ValidationMessageFor(model => model.PruefWert, "", new { @class = "text-danger" })
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input formmethod="post" style="background-color:lightblue" type="submit" value="Senden" class="btn btn-default" asp-controller="Contact" asp-action="Index" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6 right contact-right" style="background-color: white">
+                                <div class="text-center" style="margin-top:50px">
+                                    <div class="container">
+                                        <br />
+                                        <p class="fa fa-phone fa-2x"></p>
+                                        <p><abbr title="Phone">+49(0)173 899 26 90 </abbr></p>
+                                    </div>
+                                    <div class="col" style="position:center">
+                                        <i class="fa fa-envelope fa-2x"></i>
+                                        <p>
+                                            <a href="mailto:info@termiconsult.com">info@termiconsult.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="col" style="position:center">
+                                        <i class="fa fa-map-marker-alt fa-2x"></i>
+                                        <p>
+                                            Spitalstraße 6a<br />
+                                            Markdorf, 88677, Deutschland
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -22,10 +22,10 @@ code {
     height: 400px;
 }
 
-/*body {
-    background-color: darkgray;
-    margin-top: 45px;
-}*/
+body {
+    background-color: white;
+    /*margin-top: 45px;*/
+}
 
 @media only screen and (max-width: 767px) {
     /* phones */
@@ -38,7 +38,10 @@ code {
         margin-left: 1px;
         margin-right: 1px;
         font-display: block;
-        align-content: normal
+        align-content: normal;
+        background-color: white;
+        font-family: Rockwell;
+        color: dimgray
     }
 }
 
@@ -49,8 +52,8 @@ code {
 }
 
 main {
-    margin-top: 100px;
-    background-color: #584f4a; /*darkslategray;*/
+    /*margin-top: 100px;*/
+    background-color: none; /*#584f4a;*/ /*darkslategray;*/
     /*background: url(../Images/Supernova.jpg);*/
     background-size: cover;
     background-repeat: no-repeat
@@ -58,11 +61,8 @@ main {
 
 body {
     margin-bottom: 1px;
-    /*background-color: darkgrey;
-    background: url(../Images/Landingpage.JPG);
-    background-size: contain;
-    background-repeat: no-repeat*/
 }
+
 
 footer {
     position: absolute;
@@ -76,23 +76,45 @@ footer {
 /*-------------*/
 
 .home {
-    /* background: url(../Images/Vanilla.jpg);
+    /*background: url(../Images/Landingpage.JPG);
     background-size: cover;
-    background-repeat: no-repeat;*/
-    overflow: hidden;
+    background-repeat: no-repeat;
+    overflow: hidden auto;*/
     width: 100%;
-    min-height: 100vh;
+    height: 1vh;
     left: 0;
     right: 0;
-    margin-top: 1px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-family: Rockwell;
+    /*border: 1px solid lightgrey;*/
+}
+
+.landingPage {
+    background-color: darkgrey;
+    background: url(../Images/Landingpage.JPG);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.about {
+    overflow: hidden;
+    background-color: white;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid lightgrey;
+    left: 0;
+    right: 0;
+    top: 0;
+    /*border: 1px solid lightgrey;*/
 }
 
 .impressum {
-    background-color: white; /*#584F4A;*/
+    overflow: hidden;
+    background-color: white;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +127,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid lightgrey;
+    /*border: 1px solid lightgrey;*/
 }
 
 .hometext {
@@ -127,7 +149,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid lightgrey;
+    /*border: 1px solid lightgrey;*/
 }
 
 .skillDefault {
@@ -189,10 +211,11 @@ footer {
     justify-content: center;
     left: 0;
     right: 0;
-    border: 1px solid lightgrey;
+    /*border: 1px solid lightgrey;*/
 }
 
 .link {
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     min-height: 100vh;
@@ -203,41 +226,41 @@ footer {
     left: 0;
     right: 0;
     top: 0;
-    border: 1px solid lightgrey;
+    /*border: 1px solid lightgrey;*/
     background-color: white;
-}
-
-.leistung {
-    /*background-image: url(../Images/MeineKompetenzen.png);
-    background-repeat: no-repeat;
-    background-size: cover;*/
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    top: 0;
-    border: 1px solid lightgrey;
 }
 
 .leistung_wrap {
     position: relative;
     overflow: hidden;
     color: dimgrey;
+    font-family: Rockwell;
+    color: black;
 }
 
     .leistung_wrap img {
-        position: absolute;
+        position: relative;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        /* background-position-x: center;
-        background-position-y: center;*/
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        color: white;
+        /* max-width: 100%;
+        max-height: 100%;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        overflow: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        -o-object-fit: contain;
+        object-fit: contain;*/
     }
+
 .leistungimg {
     background-image: url(../Images/MeineKompetenzen.png);
     background-repeat: no-repeat;
@@ -247,7 +270,9 @@ footer {
     width: 100%;
     opacity: 0.1;
 }
+
 .contact {
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     min-height: 100vh;
@@ -258,7 +283,7 @@ footer {
     left: 0;
     right: 0;
     top: 0;
-    border: 1px solid lightgrey;
+    /*border: 1px solid lightgrey;*/
     background-color: cornflowerblue;
 }
 
@@ -300,6 +325,32 @@ footer {
         transform: translateY(-2px);
     }
 
+.contactButton {
+    vertical-align: central;
+    width: 70px;
+    height: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: inherit;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(228, 200, 200, 0.10);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border-color:none;
+}
+
+    .contactButton:hover {
+        background-color: #808080;
+        box-shadow: 0px 10px 10px rgb(0, 0, 0);
+        color: #fff;
+        transform: translateY(-2px);
+    }
 
 
 /*.footerdesign {
@@ -351,7 +402,7 @@ footer {
 
 .cardContent {
     transition: 0.3s;
-    width: 40%;
+    width: 100%;
     border-radius: 1px;
 }
 
